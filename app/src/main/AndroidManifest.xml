@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Prayerlearner1">
         <activity
+            android:name=".nozakaah"
+            android:exported="false" />
+        <activity
             android:name=".home"
             android:exported="true" />
         <activity
