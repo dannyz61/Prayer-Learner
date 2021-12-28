@@ -7,12 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class posture extends AppCompatActivity {
+public class posture1 extends AppCompatActivity {
     Button btn1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_posture);
+        setContentView(R.layout.activity_posture1);
         btn1=findViewById(R.id.button1);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override

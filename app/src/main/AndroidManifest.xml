@@ -13,6 +13,9 @@
             android:name=".nozakaah"
             android:exported="false" />
         <activity
+            android:name=".posture2"
+            android:exported="false" />
+        <activity
             android:name=".home"
             android:exported="true" />
         <activity
@@ -28,7 +31,7 @@
             android:name=".QA"
             android:exported="true" />
         <activity
-            android:name=".posture"
+            android:name=".posture1"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

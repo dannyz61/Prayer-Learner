@@ -29,6 +29,8 @@ public class Qibladirection extends AppCompatActivity implements SensorEventList
         setContentView(R.layout.activity_qibladirection);
         qibla_view =findViewById(R.id.qibla_ImageView);
         sensorManager= (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+        sensor=sensorManager.getDefaultSensor(Sensor.TYPE_ORIENTATION);
+        sensorManager.registerListener(this,sensor,SensorManager.SENSOR_DELAY_FASTEST);
 
         btn2=findViewById(R.id.button2);
         btn2.setOnClickListener(new View.OnClickListener() {
@@ -44,7 +46,6 @@ public class Qibladirection extends AppCompatActivity implements SensorEventList
     @Override
     protected void onResume() {
         super.onResume();
-        sensor=sensorManager.getDefaultSensor(Sensor.TYPE_ORIENTATION);
         if(sensor!=null)
         {
             sensorManager.registerListener(this,sensor,SensorManager.SENSOR_DELAY_FASTEST);

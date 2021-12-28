@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/wall1"
+    android:background="@drawable/background_without_logo"
     tools:context=".Qibladirection">
 
     <Button
@@ -29,6 +29,7 @@
         android:layout_marginEnd="55dp"
         android:gravity="center"
         android:text="Qibla Direction"
+        android:textColor="@color/black"
         android:textSize="35dp" />
 
     <ImageView
@@ -52,7 +53,8 @@
         android:layout_marginTop="27dp"
         android:layout_marginEnd="9dp"
         android:layout_toEndOf="@+id/textView"
-        android:text="Faisalabad,Punjab,Pakistan" />
+        android:text="Faisalabad,Punjab,Pakistan"
+        android:textColor="@color/black" />
 
     <TextView
         android:id="@+id/textView"
@@ -62,7 +64,8 @@
         android:layout_alignParentStart="true"
         android:layout_marginStart="11dp"
         android:layout_marginTop="27dp"
-        android:text="Location :" />
+        android:text="Location :"
+        android:textColor="@color/black" />
 
     <TextView
         android:id="@+id/textView4"
@@ -72,7 +75,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="10dp"
         android:layout_marginTop="171dp"
-        android:text="Longitude :" />
+        android:text="Longitude :"
+        android:textColor="@color/black" />
 
     <TextView
         android:id="@+id/textView5"
@@ -82,7 +86,8 @@
         android:layout_marginStart="22dp"
         android:layout_marginTop="9dp"
         android:layout_toEndOf="@+id/textView3"
-        android:text="21.422487" />
+        android:text="21.422487"
+        android:textColor="@color/black" />
 
     <TextView
         android:id="@+id/textView3"
@@ -92,7 +97,8 @@
         android:layout_alignParentStart="true"
         android:layout_marginStart="12dp"
         android:layout_marginTop="7dp"
-        android:text="Latitude :" />
+        android:text="Latitude :"
+        android:textColor="@color/black" />
 
     <TextView
         android:id="@+id/textView6"
@@ -102,5 +108,6 @@
         android:layout_marginStart="13dp"
         android:layout_marginTop="171dp"
         android:layout_toEndOf="@+id/textView4"
-        android:text="39.826206" />
+        android:text="39.826206"
+        android:textColor="@color/black" />
 </RelativeLayout>

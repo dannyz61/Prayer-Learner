@@ -5,7 +5,6 @@ import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -39,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent i;
 
         switch (view.getId()){
-            case R.id.card1:i=new Intent(this, posture.class);startActivity(i);
+            case R.id.card1:i=new Intent(this, posture1.class);startActivity(i);
             break;
             case R.id.card2:i=new Intent(this, Qibladirection.class);startActivity(i);
                 break;
