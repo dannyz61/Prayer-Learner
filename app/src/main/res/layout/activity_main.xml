@@ -13,24 +13,23 @@
     >
 
 
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginTop="215dp"
+        android:layout_height="161dp"
+        android:layout_marginTop="235dp"
+        android:background="@color/cardview_shadow_start_color"
         android:clipToPadding="false"
         android:gravity="center"
-        android:background="@color/cardview_shadow_start_color"
         android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card1"
-            app:cardBackgroundColor="@color/white"
             android:layout_width="96dp"
             android:layout_height="99dp"
-            android:layout_margin="20dp"
+            android:layout_margin="25dp"
             android:clickable="true"
             android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="20dp">
 
             <LinearLayout
@@ -60,7 +59,7 @@
             android:id="@+id/card2"
             android:layout_width="96dp"
             android:layout_height="99dp"
-            android:layout_margin="20dp"
+            android:layout_margin="25dp"
             android:clickable="true"
             app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="20dp">
@@ -94,9 +93,9 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="137dp"
-        android:clipToPadding="false"
+        android:layout_height="150dp"
         android:background="@color/cardview_shadow_start_color"
+        android:clipToPadding="false"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -104,9 +103,10 @@
             android:id="@+id/card3"
             android:layout_width="96dp"
             android:layout_height="99dp"
-            android:layout_margin="20dp"
+            android:layout_margin="25dp"
             android:clickable="true"
             android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="20dp">
 
             <LinearLayout
@@ -136,9 +136,10 @@
             android:id="@+id/card4"
             android:layout_width="96dp"
             android:layout_height="99dp"
-            android:layout_margin="20dp"
+            android:layout_margin="25dp"
             android:clickable="true"
             android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="20dp">
 
             <LinearLayout
@@ -171,19 +172,22 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="124dp"
-        android:clipToPadding="false"
-        android:gravity="center"
+        android:layout_height="175dp"
+        android:layout_marginBottom="70dp"
         android:background="@color/cardview_shadow_start_color"
+        android:clipToPadding="false"
+
+        android:gravity="center"
         android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card5"
-            android:layout_width="240dp"
+            android:layout_width="245dp"
             android:layout_height="109dp"
-            android:layout_margin="20dp"
+            android:layout_margin="25dp"
             android:clickable="true"
             android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="20dp"
 
             >
