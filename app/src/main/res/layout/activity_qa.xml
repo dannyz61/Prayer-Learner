@@ -4,155 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:background="@drawable/wall1"
     tools:context=".QA">
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="95dp"
-        android:layout_height="43dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="308dp"
         android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/searchView"
-        app:layout_constraintHorizontal_bias="0.307"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="194dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.557"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="110dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="44dp"
-        android:text="new answers"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchView" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="110dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="44dp"
-        android:text="Categories"
-        app:layout_constraintStart_toEndOf="@+id/button8"
-        app:layout_constraintTop_toBottomOf="@+id/searchView" />
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="110dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="45dp"
-        android:text="Send Question"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="91dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="16dp"
-        android:text="Search Answers"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toStartOf="@+id/searchView"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:id="@+id/qibla_textView"
+        android:layout_width="243dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="28dp"
+        android:text="Q/A session"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="364dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="@color/LightGreyLine"
-        android:gravity="center"
-        android:text="KNOW ISLAM"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button8" />
-
-    <View
-        android:id="@+id/view"
-        android:layout_width="413dp"
-        android:layout_height="369dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-    <Button
-        android:id="@+id/button18"
-        android:layout_width="411dp"
-        android:layout_height="52dp"
-        android:text="She makes a summary of the curriculum and sells it to students, and she does not allow them to make photocopies"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button23" />
-
-    <Button
-        android:id="@+id/button22"
-        android:layout_width="411dp"
-        android:layout_height="52dp"
-        android:onClick="showanswer"
-        android:text="There is no zakaah on wealth that has been donated to build a mosque"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view" />
-
-    <Button
-        android:id="@+id/button23"
-        android:layout_width="411dp"
-        android:layout_height="52dp"
-        android:text="The fate of those who commit major sins, if they die persisting in those sins"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button22" />
-
-    <Button
-        android:id="@+id/button19"
-        android:layout_width="411dp"
-        android:layout_height="52dp"
-        android:text="Is it permissible to put the sperm of the husband and the egg of the wife in the uterus of the second wife?"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button18" />
-
-    <Button
-        android:id="@+id/button20"
-        android:layout_width="411dp"
-        android:layout_height="52dp"
-        android:text="Can he pray behind someone who does not believe that Muhammad was the last of the prophets?"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button19" />
-
-    <Button
-        android:id="@+id/button21"
-        android:layout_width="411dp"
-        android:layout_height="52dp"
-        android:text="Ruling on always reciting as-Sajdah and al-Insaan in Fajr on Fridays"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button20" />
-
-    <Button
-        android:id="@+id/button24"
-        android:layout_width="411dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="5dp"
-        android:text="Does a menstruating woman have to change her clothes once her period ends?"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button21" />
-
+        app:layout_constraintVertical_bias="0.681" />
 </androidx.constraintlayout.widget.ConstraintLayout>
