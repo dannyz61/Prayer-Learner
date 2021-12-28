@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="searchView" type="id" />
+    <item name="button" type="id" />
+    <item name="button8" type="id" />
+    <item name="button7" type="id" />
+    <item name="view" type="id" />
+    <item name="button18" type="id" />
+    <item name="button23" type="id" />
+    <item name="button22" type="id" />
+    <item name="button20" type="id" />
+    <item name="button21" type="id" />
+    <item name="button19" type="id" />
+    <item name="button24" type="id" />
+</resources>

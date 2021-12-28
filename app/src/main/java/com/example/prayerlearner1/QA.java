@@ -23,4 +23,10 @@ public class QA extends AppCompatActivity {
             }
         });
     }
+
+    public void showanswer(View view) {
+        Intent intent=new Intent(this,nozakaah.class);
+        startActivity(intent);
+
+    }
 }
