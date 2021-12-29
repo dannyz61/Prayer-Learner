@@ -12,12 +12,13 @@
         android:layout_width="95dp"
         android:layout_height="43dp"
         android:layout_marginBottom="16dp"
-        android:text="Back"
+        android:text="@string/back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/searchView"
         app:layout_constraintHorizontal_bias="0.307"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="TouchTargetSizeCheck" />
+
 
     <SearchView
         android:id="@+id/searchView"
@@ -35,7 +36,7 @@
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="44dp"
-        android:text="new answers"
+        android:text="@string/new_answers"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchView" />
 
@@ -45,7 +46,7 @@
         android:layout_height="54dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="44dp"
-        android:text="Categories"
+        android:text="@string/categories"
         app:layout_constraintStart_toEndOf="@+id/button8"
         app:layout_constraintTop_toBottomOf="@+id/searchView" />
 
@@ -55,7 +56,7 @@
         android:layout_height="54dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="45dp"
-        android:text="Send Question"
+        android:text="@string/send_question"
         app:layout_constraintStart_toEndOf="@+id/button"
         app:layout_constraintTop_toBottomOf="@+id/searchView" />
 
@@ -65,7 +66,7 @@
         android:layout_height="37dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="16dp"
-        android:text="Search Answers"
+        android:text="@string/search_answers"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toStartOf="@+id/searchView"
         app:layout_constraintHorizontal_bias="0.0"
@@ -80,7 +81,7 @@
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/LightGreyLine"
         android:gravity="center"
-        android:text="KNOW ISLAM"
+        android:text="@string/know_islam"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"
@@ -101,7 +102,7 @@
         android:id="@+id/button18"
         android:layout_width="411dp"
         android:layout_height="52dp"
-        android:text="She makes a summary of the curriculum and sells it to students, and she does not allow them to make photocopies"
+        android:text="@string/she_makes_a_summary_of_the_curriculum_and_sells_it_to_students_and_she_does_not_allow_them_to_make_photocopies"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button23" />
 
