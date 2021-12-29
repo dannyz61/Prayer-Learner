@@ -4,34 +4,246 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/wall1"
+    android:orientation="vertical"
+    android:background="#002028"
+    android:padding="10dp"
+    android:gravity="center"
     tools:context=".alerts"
     >
 
+    <LinearLayout
+        android:id="@+id/label1"
+        android:layout_width="396dp"
+        android:layout_height="192dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="10dp">
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="179dp"
+            android:padding="120dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/praytime">
+
+        </ImageView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="384dp"
+        android:layout_height="318dp"
+        android:background="#9444"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="221dp">
+
+
+        <TableLayout
+            android:layout_width="363dp"
+            android:layout_height="match_parent"
+            android:stretchColumns="0,3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="66dp"
+                android:text="Prayer Time"
+                android:textSize="34dp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="88dp"
+                    android:layout_height="40dp"
+                    android:text="Fajar "
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:text="4 Feb"
+
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="126dp"
+                    android:layout_height="40dp"
+                    android:text="  05:09am"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/clock"
+                    android:textSize="24dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Sunrise"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="4 Feb"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="  05:09am"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/clock"
+                    android:textSize="24dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Zuhr "
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4 Feb"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="  05:09am"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/clock"
+                    android:textSize="24dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Asar "
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4 Feb"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="  05:09am"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/clock"
+                    android:textSize="24dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Mghrib "
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="4 Feb"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="  05:09am"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/clock"
+                    android:textSize="24dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Isha "
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="4 Feb"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="  05:09am"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/clock"
+                    android:textSize="24dp" />
+            </TableRow>
+
+
+        </TableLayout>
+    </LinearLayout>
+
     <Button
         android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="208dp"
+
+        android:layout_width="87dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="40dp"
+        android:background="#29524A"
         android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/qibla_textView"
-        android:layout_width="328dp"
-        android:layout_height="114dp"
-        android:layout_marginTop="28dp"
-        android:gravity="center"
-        android:text="Namaz and Ahadith Alerts"
-        android:textSize="35dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.857" />
 </androidx.constraintlayout.widget.ConstraintLayout>

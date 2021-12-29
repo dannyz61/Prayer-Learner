@@ -3,10 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Madni/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/Users/Madni/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_nozakaah.xml" value="0.253125" />
-        <entry key="..\:/Users/Madni/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_qa.xml" value="0.2" />
-        <entry key="..\:/Users/Madni/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_report.xml" value="0.16" />
         <entry key="..\:/Users/bilal/AndroidStudioProjects/Prayerlearner1/app/src/main/res/drawable/ic_alerts.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/bilal/AndroidStudioProjects/Prayerlearner1/app/src/main/res/drawable/ic_android_black_24dp.xml" value="0.25" />
         <entry key="..\:/Users/bilal/AndroidStudioProjects/Prayerlearner1/app/src/main/res/drawable/ic_fyp_logo.xml" value="0.22552083333333334" />
@@ -21,10 +17,18 @@
         <entry key="..\:/Users/bilal/AndroidStudioProjects/Prayerlearner1/app/src/main/res/layout/activity_qibla.xml" value="0.209375" />
         <entry key="..\:/Users/bilal/AndroidStudioProjects/Prayerlearner1/app/src/main/res/layout/activity_qibladirection.xml" value="0.17119565217391305" />
         <entry key="..\:/Users/bilal/AndroidStudioProjects/Prayerlearner1/app/src/main/res/layout/activity_report.xml" value="0.209375" />
+        <entry key="..\:/Users/bilal/AndroidStudioProjects/Week2/Prayer-Learner/app/src/main/res/layout/activity_main.xml" value="0.14" />
+        <entry key="..\:/Users/bilal/AndroidStudioProjects/Week2/Prayer-Learnernew/app/src/main/res/layout/activity_alerts.xml" value="0.14" />
+        <entry key="..\:/Users/bilal/AndroidStudioProjects/Week2/Prayer-Learnernew/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/bilal/AndroidStudioProjects/Week2/Prayer-Learnernew/app/src/main/res/layout/activity_nozakaah.xml" value="0.12771739130434784" />
+        <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_main.xml" value="0.12" />
+        <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_posture1.xml" value="0.264" />
+        <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_posture2.xml" value="0.19067028985507245" />
+        <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_posture3.xml" value="0.264" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
