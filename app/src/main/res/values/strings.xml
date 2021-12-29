@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Prayerlearner1</string>
+    <string name="new_answers">new answers</string>
+    <string name="she_makes_a_summary_of_the_curriculum_and_sells_it_to_students_and_she_does_not_allow_them_to_make_photocopies">She makes a summary of the curriculum and sells it to students, and she does not allow them to make photocopies</string>
+    <string name="know_islam">KNOW ISLAM</string>
+    <string name="send_question">Send Question</string>
+    <string name="categories">Categories</string>
+    <string name="search_answers">Search Answers</string>
+    <string name="back">Back</string>
 </resources>
