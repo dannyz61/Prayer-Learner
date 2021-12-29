@@ -14,5 +14,12 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="back" />
+    <string name="she_makes_a_summary_of_the_curriculum_and_sells_it_to_students_and_she_does_not_allow_them_to_make_photocopies" />
+    <string name="send_question" />
+    <string name="new_answers" />
+    <string name="categories" />
+    <string name="know_islam" />
+    <string name="search_answers" />
 
 </resources>

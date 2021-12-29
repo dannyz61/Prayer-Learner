@@ -34,14 +34,16 @@
 
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="384dp"
         android:layout_height="318dp"
+        android:layout_marginTop="10dp"
         android:background="#9444"
         android:gravity="center"
         android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/label1"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="221dp">
+        tools:layout_editor_absoluteX="2dp">
 
 
         <TableLayout
@@ -53,6 +55,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="66dp"
                 android:text="Prayer Time"
+                android:textColor="@color/white"
                 android:textSize="34dp" />
 
             <TableRow
@@ -63,6 +66,7 @@
                     android:layout_width="88dp"
                     android:layout_height="40dp"
                     android:text="Fajar "
+                    android:textColor="@color/white"
                     android:textSize="24dp" />
 
                 <TextView
@@ -70,12 +74,14 @@
                     android:layout_height="40dp"
                     android:text="4 Feb"
 
+                    android:textColor="@color/white"
                     android:textSize="24dp" />
 
                 <TextView
                     android:layout_width="126dp"
                     android:layout_height="40dp"
                     android:text="  05:09am"
+                    android:textColor="@color/white"
                     android:textSize="24dp" />
 
                 <TextView
@@ -93,18 +99,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:text="Sunrise"
+                    android:textColor="@color/white"
                     android:textSize="24dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:text="4 Feb"
+                    android:textColor="@color/white"
                     android:textSize="24dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:text="  05:09am"
+                    android:textColor="@color/white"
                     android:textSize="24dp" />
 
                 <TextView
@@ -122,18 +131,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:text="Zuhr "
+                    android:textColor="@color/white"
                     android:textSize="24dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="4 Feb"
+                    android:textColor="@color/white"
                     android:textSize="24dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:text="  05:09am"
+                    android:textColor="@color/white"
                     android:textSize="24dp" />
 
                 <TextView
@@ -151,18 +163,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:text="Asar "
+                    android:textColor="@color/white"
                     android:textSize="24dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="4 Feb"
+                    android:textColor="@color/white"
                     android:textSize="24dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:text="  05:09am"
+                    android:textColor="@color/white"
                     android:textSize="24dp" />
 
                 <TextView
@@ -180,18 +195,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:text="Mghrib "
+                    android:textColor="@color/white"
                     android:textSize="24dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:text="4 Feb"
+                    android:textColor="@color/white"
                     android:textSize="24dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:text="  05:09am"
+                    android:textColor="@color/white"
                     android:textSize="24dp" />
 
                 <TextView
@@ -209,18 +227,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:text="Isha "
+                    android:textColor="@color/white"
                     android:textSize="24dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:text="4 Feb"
+                    android:textColor="@color/white"
                     android:textSize="24dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:text="  05:09am"
+                    android:textColor="@color/white"
                     android:textSize="24dp" />
 
                 <TextView
@@ -237,13 +258,17 @@
     <Button
         android:id="@+id/button4"
 
-        android:layout_width="87dp"
-        android:layout_height="33dp"
+        android:layout_width="142dp"
+        android:layout_height="56dp"
         android:layout_marginBottom="40dp"
         android:background="#29524A"
         android:text="Back"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.644" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

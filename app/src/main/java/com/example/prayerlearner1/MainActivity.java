@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent i;
 
         switch (view.getId()){
-            case R.id.card1:i=new Intent(this, posture1.class);startActivity(i);
+            case R.id.card1:i=new Intent(this, posture2.class);startActivity(i);
             break;
             case R.id.card2:i=new Intent(this, Qibladirection.class);startActivity(i);
                 break;

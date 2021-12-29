@@ -14,6 +14,7 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
         android:text="Taqbeer"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView20" />
@@ -22,9 +23,10 @@
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
         android:text="Rakuh"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
@@ -36,6 +38,7 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="20dp"
         android:text="Qiyam"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
@@ -45,8 +48,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="36dp"
         android:text="Sajda"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView18" />
@@ -58,6 +62,7 @@
         android:layout_marginStart="136dp"
         android:layout_marginTop="16dp"
         android:text="Postures"
+        android:textColor="@color/white"
         android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -70,6 +75,7 @@
         android:layout_marginEnd="26dp"
         android:background="#29524A"
         android:text="check"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -77,9 +83,10 @@
         android:id="@+id/button9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
+        android:layout_marginTop="4dp"
         android:background="#29524A"
         android:text="check"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="@+id/button11"
         app:layout_constraintTop_toBottomOf="@+id/button11" />
 
@@ -87,8 +94,10 @@
         android:id="@+id/button11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:background="#29524A"
         android:text="check"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="@+id/button6"
         app:layout_constraintTop_toBottomOf="@+id/button6" />
 
@@ -96,42 +105,39 @@
         android:id="@+id/button10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:background="#29524A"
         android:text="check"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="@+id/button9"
         app:layout_constraintTop_toBottomOf="@+id/button9" />
+
+    <!--    posture 2-->
 
     <Button
         android:id="@+id/back_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="62dp"
+        android:layout_marginTop="72dp"
         android:background="#29524A"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <!--    posture 2-->
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="325dp"
-        android:background="#29524A"
-        android:text="Back"
+        android:text="back"
+        android:onClick="back"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13"
-        app:layout_constraintVertical_bias="0.25" />
+        app:layout_constraintVertical_bias="0.406" />
 
     <TextView
         android:id="@+id/textView27"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="388dp"
+        android:layout_marginTop="352dp"
         android:text="Sensors Data"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -140,22 +146,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/gyr_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="4dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/acc_2" />
-
-    <TextView
         android:id="@+id/meg_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="40dp"
+        android:layout_width="77dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
         android:text="TextView"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/meg_2"
         app:layout_constraintTop_toBottomOf="@+id/gyr_1" />
 
@@ -163,59 +161,73 @@
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
         android:text="Magnetometer"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <TextView
         android:id="@+id/acc_0"
-        android:layout_width="68dp"
-        android:layout_height="21dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="48dp"
+        android:layout_width="83dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
         android:text="TextView"
-        app:layout_constraintEnd_toStartOf="@+id/acc_1"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <TextView
         android:id="@+id/gyr_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="40dp"
+        android:layout_width="92dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="12dp"
         android:text="TextView"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/gyr_2"
         app:layout_constraintTop_toBottomOf="@+id/acc_1" />
 
     <TextView
         android:id="@+id/acc_1"
-        android:layout_width="56dp"
-        android:layout_height="19dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
+        android:layout_width="94dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
         android:text="TextView"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/acc_2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/acc_0"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <TextView
         android:id="@+id/gyr_0"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="60dp"
+        android:layout_width="88dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
         android:text="TextView"
-        app:layout_constraintEnd_toStartOf="@+id/gyr_1"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
         app:layout_constraintTop_toBottomOf="@+id/acc_0" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="480dp"
+        android:layout_marginTop="444dp"
         android:layout_marginEnd="24dp"
         android:text="X-Axis"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/textView9"
         app:layout_constraintHorizontal_bias="0.755"
         app:layout_constraintStart_toStartOf="parent"
@@ -223,11 +235,13 @@
 
     <TextView
         android:id="@+id/meg_0"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="98dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
         android:text="TextView"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
         app:layout_constraintStart_toEndOf="@+id/textView13"
         app:layout_constraintTop_toBottomOf="@+id/gyr_0" />
 
@@ -235,9 +249,11 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="480dp"
-        android:layout_marginEnd="56dp"
+        android:layout_marginTop="444dp"
+        android:layout_marginEnd="84dp"
         android:text="Y-Axis"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/textView10"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -245,29 +261,35 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="72dp"
         android:text="Accelerometer"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView27" />
 
     <TextView
         android:id="@+id/acc_2"
-        android:layout_width="63dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="91dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="4dp"
         android:text="TextView"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <TextView
         android:id="@+id/meg_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="4dp"
+        android:layout_width="85dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
         android:text="TextView"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gyr_2" />
 
@@ -275,9 +297,11 @@
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="480dp"
+        android:layout_marginTop="444dp"
         android:layout_marginEnd="20dp"
         android:text="Z-axis"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -285,12 +309,35 @@
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
         android:text="Gyroscope"
-        app:layout_constraintEnd_toStartOf="@+id/gyr_0"
-        app:layout_constraintHorizontal_bias="0.2"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/gyr_2"
+        android:layout_width="85dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acc_2" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="genratefile"
+        android:layout_marginEnd="8dp"
+        android:text="Generate File"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meg_2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

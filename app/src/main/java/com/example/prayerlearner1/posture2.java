@@ -34,12 +34,12 @@ public class posture2 extends AppCompatActivity  implements SensorEventListener 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_posture2);
+        setContentView(R.layout.activity_posture1);
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.MANAGE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE}, PackageManager.PERMISSION_GRANTED);
-        startActivity(new Intent(Settings.ACTION_MANAGE_ALL_FILES_ACCESS_PERMISSION));
+        
 
 
-        Toast.makeText(this, csv, Toast.LENGTH_SHORT).show();
+
         data = new ArrayList<String[]>();
         data.add(new String[]{"Sensors", " ", "Accelemeter", " ", "", "Gyrometer", "", "", "Magnetometer", ""});
         data.add(new String[]{"Axis", "X", "Y", "Z", "X", "Y", "Z", "X", "Y", "Z"});
@@ -148,19 +148,29 @@ public class posture2 extends AppCompatActivity  implements SensorEventListener 
 
     public void genratefile(View view) {
         try {
-
+            sensorManager.unregisterListener(this);
+            sensorManager1.unregisterListener(this);
+            sensorManager2.unregisterListener(this);
             CSVWriter writer1;
             writer1 = null;
             writer1 = new CSVWriter(new FileWriter(csv));
-            Toast.makeText(this, "Data Exported Succesfully", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Data Exported "+csv+" Succesfully", Toast.LENGTH_LONG).show();
             writer1.writeAll(data); // data is adding to csv
             writer1.close();
 
         } catch (IOException e) {
-            Toast.makeText(this, "File not Created \nYour System Storage is not acceccible", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "File not Created \nYour System Storage is not acceccible", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(Settings.ACTION_MANAGE_ALL_FILES_ACCESS_PERMISSION));
+            Toast.makeText(this, "Allow Prayer Learner to Access Files", Toast.LENGTH_SHORT).show();
             e.printStackTrace();
 
         }
 
+    }
+
+    public void back(View view) {
+        Intent intent=new Intent(this,MainActivity.class);
+        startActivity(intent);
+        finish();
     }
 }
