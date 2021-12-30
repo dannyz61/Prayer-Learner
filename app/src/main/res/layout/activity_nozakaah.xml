@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#002028"
     tools:context=".nozakaah">
 
     <TextView
@@ -11,10 +12,9 @@
         android:layout_width="399dp"
         android:layout_height="41dp"
         android:layout_marginTop="28dp"
-        android:background="#FFFFFF"
-        android:backgroundTint="#00AF4C4C"
+        android:background="#9444"
         android:text="There is no zakaah on wealth that has been donated to build a mosque"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,9 +25,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="28dp"
-        android:backgroundTint="#9C27B0"
+        android:background="#9444"
         android:text="Scholar name"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -36,9 +36,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="28dp"
+        android:background="#9444"
         android:text="Views "
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@+id/acc_0"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -47,9 +48,10 @@
         android:layout_width="106dp"
         android:layout_height="21dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="28dp"
+        android:background="#9444"
         android:text="Molana TARIQ JAMEEL"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -68,8 +70,9 @@
         android:layout_width="348dp"
         android:layout_height="113dp"
         android:layout_marginTop="24dp"
+        android:background="#9444"
         android:text="Question : The people of the neighbourhood donated wealth to build a mosque, but we were not able to build it for various reasons. One full Hijri year has passed: is it obligatory to give zakaah on this wealth?"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/view2"
         app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="@+id/view2"
@@ -80,8 +83,9 @@
         android:layout_width="97dp"
         android:layout_height="24dp"
         android:layout_marginTop="16dp"
+        android:background="#9444"
         android:text="Answer"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/textView10"
         app:layout_constraintEnd_toEndOf="@+id/view2"
         app:layout_constraintHorizontal_bias="0.19"
@@ -94,8 +98,9 @@
         android:layout_width="319dp"
         android:layout_height="195dp"
         android:layout_marginTop="52dp"
+        android:background="#9444"
         android:text=" Praise be to Allah.  The wealth that has been allocated for a public interest, such as mosques or to be given to the poor, is not subject to zakaah, because it is not owned by a particular individual.  An-Nawawi (may Allah have mercy on him) said in al-Majmoo‘ (5/311): If the livestock has been allocated for a public interest, such as the poor, mosques, fighters in Allah’s cause, orphans and the like, then no zakaah is due on it, because it does not belong to a particular individual."
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/view2"
         app:layout_constraintStart_toStartOf="@+id/view2"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
@@ -107,7 +112,7 @@
         android:layout_marginStart="132dp"
         android:layout_marginTop="64dp"
         android:text="helpfull"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/button14"
         app:layout_constraintHorizontal_bias="0.725"
         app:layout_constraintStart_toStartOf="parent"
@@ -117,11 +122,12 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="28dp"
+        android:background="#9444"
         android:text="60"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintHorizontal_bias="0.136"
         app:layout_constraintStart_toEndOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -130,9 +136,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="36dp"
+        android:background="#29524A"
         android:onClick="back"
         android:text="submit"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

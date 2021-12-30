@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
+    android:background="#002028"
     tools:context=".Report">
 
     <TextView
@@ -13,7 +14,9 @@
         android:layout_height="64dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:background="#9444"
         android:text="NAMAZ REPORT"
+        android:textColor="@color/white"
         android:textSize="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,7 +26,10 @@
         android:layout_width="122dp"
         android:layout_height="60dp"
         android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:background="#9444"
         android:text="jalsa"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView23" />
@@ -33,7 +39,9 @@
         android:layout_width="122dp"
         android:layout_height="60dp"
         android:layout_marginStart="168dp"
+        android:layout_marginTop="12dp"
         android:text="100%"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView23" />
@@ -43,7 +51,10 @@
         android:layout_width="122dp"
         android:layout_height="60dp"
         android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:background="#9444"
         android:text="Sajda"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView24" />
@@ -53,7 +64,9 @@
         android:layout_width="122dp"
         android:layout_height="60dp"
         android:layout_marginStart="168dp"
+        android:layout_marginTop="20dp"
         android:text="80%"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView24" />
@@ -63,7 +76,9 @@
         android:layout_width="122dp"
         android:layout_height="60dp"
         android:layout_marginStart="168dp"
+        android:layout_marginTop="16dp"
         android:text="78%"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView25" />
@@ -73,7 +88,10 @@
         android:layout_width="122dp"
         android:layout_height="60dp"
         android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:background="#9444"
         android:text="Ruku"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView25" />
@@ -83,7 +101,10 @@
         android:layout_width="122dp"
         android:layout_height="60dp"
         android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:background="#9444"
         android:text="Takbeer"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView26" />
@@ -93,7 +114,9 @@
         android:layout_width="122dp"
         android:layout_height="60dp"
         android:layout_marginStart="168dp"
+        android:layout_marginTop="12dp"
         android:text="84%"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView26" />
@@ -103,7 +126,10 @@
         android:layout_width="122dp"
         android:layout_height="60dp"
         android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:background="#9444"
         android:text="Perform Rakaat"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView28" />
@@ -114,6 +140,7 @@
         android:layout_height="60dp"
         android:layout_marginStart="168dp"
         android:text="3"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView26" />
@@ -123,7 +150,10 @@
         android:layout_width="122dp"
         android:layout_height="60dp"
         android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:background="#9444"
         android:text="Rakaat"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView29" />
@@ -133,8 +163,9 @@
         android:layout_width="122dp"
         android:layout_height="60dp"
         android:layout_marginStart="168dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="12dp"
         android:text="4"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView29" />
@@ -145,7 +176,9 @@
         android:layout_height="60dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="60dp"
+        android:background="#9444"
         android:text="Namaz"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
@@ -157,6 +190,7 @@
         android:layout_marginStart="168dp"
         android:layout_marginTop="64dp"
         android:text="ZUHUR"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
@@ -167,7 +201,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
+        android:background="#29524A"
         android:text="Start"
+        android:textColor="@color/white"
         app:cornerRadius="10sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -178,7 +214,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="32dp"
+        android:background="#29524A"
         android:text="end"
+        android:textColor="@color/white"
         app:cornerRadius="10sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button5" />

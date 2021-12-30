@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#CBCCD6"
+    android:background="#002028"
     tools:context=".Qibladirection">
 
     <Button
@@ -14,7 +14,9 @@
         android:layout_below="@+id/qibla_ImageView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="69dp"
-        android:text="Back" />
+        android:background="#29524A"
+        android:text="Back"
+        android:textColor="@color/white" />
 
     <TextView
         android:id="@+id/qibla_textView"
@@ -27,9 +29,11 @@
         android:layout_marginStart="86dp"
         android:layout_marginTop="33dp"
         android:layout_marginEnd="55dp"
+        android:background="#9444"
         android:gravity="center"
+        android:shadowColor="#9444"
         android:text="Qibla Direction"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="35dp" />
 
     <ImageView
@@ -53,8 +57,10 @@
         android:layout_marginTop="27dp"
         android:layout_marginEnd="9dp"
         android:layout_toEndOf="@+id/textView"
+        android:background="#9444"
+        android:shadowColor="#9444"
         android:text="Faisalabad,Punjab,Pakistan"
-        android:textColor="@color/black" />
+        android:textColor="@color/white" />
 
     <TextView
         android:id="@+id/textView"
@@ -64,8 +70,10 @@
         android:layout_alignParentStart="true"
         android:layout_marginStart="11dp"
         android:layout_marginTop="27dp"
+        android:background="#9444"
+        android:shadowColor="#9444"
         android:text="Location :"
-        android:textColor="@color/black" />
+        android:textColor="@color/white" />
 
     <TextView
         android:id="@+id/textView4"
@@ -75,8 +83,10 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="10dp"
         android:layout_marginTop="171dp"
+        android:background="#9444"
+        android:shadowColor="#9444"
         android:text="Longitude :"
-        android:textColor="@color/black" />
+        android:textColor="@color/white" />
 
     <TextView
         android:id="@+id/textView5"
@@ -86,8 +96,10 @@
         android:layout_marginStart="22dp"
         android:layout_marginTop="9dp"
         android:layout_toEndOf="@+id/textView3"
+        android:background="#9444"
+        android:shadowColor="#9444"
         android:text="21.422487"
-        android:textColor="@color/black" />
+        android:textColor="@color/white" />
 
     <TextView
         android:id="@+id/textView3"
@@ -97,8 +109,10 @@
         android:layout_alignParentStart="true"
         android:layout_marginStart="12dp"
         android:layout_marginTop="7dp"
+        android:background="#9444"
+        android:shadowColor="#9444"
         android:text="Latitude :"
-        android:textColor="@color/black" />
+        android:textColor="@color/white" />
 
     <TextView
         android:id="@+id/textView6"
@@ -108,6 +122,8 @@
         android:layout_marginStart="13dp"
         android:layout_marginTop="171dp"
         android:layout_toEndOf="@+id/textView4"
+        android:background="#9444"
+        android:shadowColor="#9444"
         android:text="39.826206"
-        android:textColor="@color/black" />
+        android:textColor="@color/white" />
 </RelativeLayout>
