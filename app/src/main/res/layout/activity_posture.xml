@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".posture"
+    tools:context=".Posture"
     android:background="#002028"
     >
 
@@ -20,6 +20,7 @@
         android:layout_marginEnd="117dp"
         android:width="113dp"
         android:background="@drawable/roundbtn"
+        android:onClick="Inspection"
         android:text="Posture Inspection"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent" />
