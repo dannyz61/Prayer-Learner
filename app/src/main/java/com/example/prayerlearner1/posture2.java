@@ -169,7 +169,7 @@ public class posture2 extends AppCompatActivity  implements SensorEventListener 
     }
 
     public void back(View view) {
-        Intent intent=new Intent(this,Posture.class);
+        Intent intent=new Intent(this,posture.class);
         startActivity(intent);
         finish();
     }

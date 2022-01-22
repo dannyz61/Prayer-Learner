@@ -12,10 +12,12 @@
     >
 
     <RelativeLayout
-        
+
         android:id="@+id/label1"
         android:layout_width="384dp"
-        android:layout_height="250dp">
+        android:layout_height="250dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <com.smarteist.autoimageslider.SliderView
             android:id="@+id/image_slider"
@@ -37,10 +39,6 @@
 
             app:sliderScrollTimeInSec="5"
             app:sliderStartAutoCycle="true" />
-
-
-
-
 
 
     </RelativeLayout>
