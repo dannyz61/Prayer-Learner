@@ -12,7 +12,7 @@
         android:layout_width="399dp"
         android:layout_height="41dp"
         android:layout_marginTop="28dp"
-        android:background="#9444"
+        android:background="@drawable/roundbtn"
         android:text="There is no zakaah on wealth that has been donated to build a mosque"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"

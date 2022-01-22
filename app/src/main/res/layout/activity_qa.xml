@@ -13,16 +13,16 @@
         android:id="@+id/button3"
         android:layout_width="95dp"
         android:layout_height="43dp"
+        android:layout_marginStart="20dp"
         android:layout_marginBottom="16dp"
-        android:background="#29524A"
+        android:background="@drawable/roundbtn"
         android:text="Back"
+
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/searchView"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button24"
-        app:layout_constraintVertical_bias="0.619"
+        app:layout_constraintVertical_bias="0.521"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <SearchView
@@ -42,10 +42,10 @@
     <Button
         android:id="@+id/button"
         android:layout_width="110dp"
-        android:layout_height="54dp"
+        android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="44dp"
-        android:background="#29524A"
+        android:background="@drawable/roundbtn"
         android:text="New Asnwers"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,11 +54,11 @@
 
     <Button
         android:id="@+id/button7"
-        android:layout_width="110dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="28dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="44dp"
-        android:background="#29524A"
+        android:background="@drawable/roundbtn"
         android:text="Categories"
         android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@+id/button8"
@@ -67,11 +67,11 @@
 
     <Button
         android:id="@+id/button8"
-        android:layout_width="110dp"
-        android:layout_height="54dp"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="44dp"
-        android:background="#29524A"
+        android:background="@drawable/roundbtn"
         android:text="Ask Questions"
         android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@+id/button"

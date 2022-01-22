@@ -131,7 +131,7 @@
                             android:layout_width="135dp"
                             android:layout_height="23dp"
                             android:gravity="center"
-                            android:text="Posture Correction"
+                            android:text="Posture"
                             android:textColor="@color/black"
                             android:textSize="11sp"
                             android:textStyle="bold" />
