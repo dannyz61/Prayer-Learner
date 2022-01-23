@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1058939867893",
+    "project_id": "prayerlearner",
+    "storage_bucket": "prayerlearner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1058939867893:android:0b503cc8447b2370632bbc",
+        "android_client_info": {
+          "package_name": "com.example.prayerlearner1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1058939867893-pmssnuve0g2r8llbi8muv7dqjr72ea4n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBL2VX9wq2csPLmRzaA1iTT6inoIq8YboM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1058939867893-pmssnuve0g2r8llbi8muv7dqjr72ea4n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
