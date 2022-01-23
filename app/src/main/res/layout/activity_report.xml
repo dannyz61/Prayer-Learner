@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
 
     android:background="#002028"
-    tools:context=".Report">
+    tools:context=".GenrateReport">
 
     <TextView
         android:id="@+id/textView15"

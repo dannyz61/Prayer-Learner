@@ -15,21 +15,35 @@
         android:theme="@style/Theme.Design.Light">
 
         <activity
-            android:name=".nozakaah"
+            android:name=".Details"
             android:exported="false" />
-        <activity
-            android:name=".posture2"
-            android:exported="false" />
-        <activity android:name=".posture"
+        <activity android:name=".PostureIdentitifiction"
             android:exported="true">
 
         </activity>
-        <activity android:name=".posturedemo"
+        <activity android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Design.NoActionBar">
+        </activity>
+        <activity android:name=".ForgotPassword"
+            android:exported="true">
+
+        </activity>
+        <activity android:name=".ForgotPasswordTwo"
+            android:exported="true"
+            android:theme="@style/Theme.Design.NoActionBar">
+
+        </activity>
+        <activity android:name=".Signup"
+            android:exported="true">
+
+        </activity>
+        <activity android:name=".PostureDemo"
             android:exported="true">
 
         </activity>
         <activity
-            android:name=".home"
+            android:name=".SplashScreen"
             android:exported="true"
             android:theme="@style/Theme.Design.Light.NoActionBar">
             <intent-filter>
@@ -39,22 +53,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Qibladirection"
+            android:name=".QiblaDirection"
             android:exported="true" />
         <activity
-            android:name=".Report"
+            android:name=".GenrateReport"
             android:exported="true" />
         <activity
-            android:name=".alerts"
+            android:name=".NamazAhadithAlerts"
             android:exported="true" />
         <activity
-            android:name=".QA"
+            android:name=".QASeassions"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".HomeActivity"
             android:exported="true" />
 
-        <activity android:name=".postureInspection"
+        <activity android:name=".PostureInspection"
             android:exported="true">
 
         </activity>

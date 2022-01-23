@@ -1,5 +1,6 @@
 package com.example.prayerlearner1;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
@@ -7,9 +8,9 @@ import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
-import android.hardware.SensorListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.RotateAnimation;
@@ -17,7 +18,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class Qibladirection extends AppCompatActivity implements SensorEventListener {
+public class QiblaDirection extends AppCompatActivity implements SensorEventListener {
     Button btn2;
     ImageView qibla_view;
     Sensor sensor;
@@ -25,6 +26,10 @@ public class Qibladirection extends AppCompatActivity implements SensorEventList
     float currentDegree;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("Qibla Direction");
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qibladirection);
         qibla_view =findViewById(R.id.qibla_ImageView);
@@ -36,13 +41,22 @@ public class Qibladirection extends AppCompatActivity implements SensorEventList
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent= new Intent(getApplicationContext(),MainActivity.class);
+                Intent intent= new Intent(getApplicationContext(), HomeActivity.class);
                 startActivity(intent);
                 finish();
             }
         });
     }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+        }
 
+        return super.onOptionsItemSelected(item);
+    }
     @Override
     protected void onResume() {
         super.onResume();

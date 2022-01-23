@@ -9,10 +9,12 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
@@ -23,7 +25,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class postureInspection extends AppCompatActivity  implements SensorEventListener {
+public class PostureInspection extends AppCompatActivity  implements SensorEventListener {
     SensorManager sensorManager, sensorManager1, sensorManager2;
     List<String[]> data;
     Long lastTimeUpdate;
@@ -36,9 +38,12 @@ public class postureInspection extends AppCompatActivity  implements SensorEvent
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_posture1);
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.MANAGE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE}, PackageManager.PERMISSION_GRANTED);
-        
 
 
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("Posture Inspection");
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         data = new ArrayList<String[]>();
         data.add(new String[]{"Sensors", " ", "Accelemeter", " ", "", "Gyrometer", "", "", "Magnetometer", ""});
@@ -60,7 +65,16 @@ public class postureInspection extends AppCompatActivity  implements SensorEvent
         gyr2=findViewById(R.id.gyr_2);
 
     }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+        }
 
+        return super.onOptionsItemSelected(item);
+    }
     public void getMyAccelerometerValues(SensorEvent event) {
         float[] values = event.values;
         float x = values[0];
@@ -169,7 +183,7 @@ public class postureInspection extends AppCompatActivity  implements SensorEvent
     }
 
     public void back(View view) {
-        Intent intent=new Intent(this,MainActivity.class);
+        Intent intent=new Intent(this, HomeActivity.class);
         startActivity(intent);
         finish();
     }

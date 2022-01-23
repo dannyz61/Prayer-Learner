@@ -1,9 +1,11 @@
 package com.example.prayerlearner1;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -11,7 +13,7 @@ import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnima
 import com.smarteist.autoimageslider.SliderAnimations;
 import com.smarteist.autoimageslider.SliderView;
 
-public class alerts extends AppCompatActivity {
+public class NamazAhadithAlerts extends AppCompatActivity {
     Button btn4;
     SliderView sliderView;
     int[] images = {R.drawable.h1,
@@ -25,6 +27,10 @@ public class alerts extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alerts);
         sliderView = findViewById(R.id.image_slider);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("Alerts");
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
 
         SliderAdapter sliderAdapter = new SliderAdapter(images);
 
@@ -38,10 +44,20 @@ public class alerts extends AppCompatActivity {
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent= new Intent(getApplicationContext(),MainActivity.class);
+                Intent intent= new Intent(getApplicationContext(), HomeActivity.class);
                 startActivity(intent);
                 finish();
             }
         });
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

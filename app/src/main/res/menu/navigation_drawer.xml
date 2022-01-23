@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="navigation-view">
+    tools:showIn="navigation-view" >
 
     <group
         android:id="@+id/group1"
@@ -10,7 +10,7 @@
             android:id="@+id/item1"
             android:icon="@drawable/ic_baseline_share_24"
             android:title="Share App"
-            android:iconTint="@color/white"
+
             />
         <item
             android:id="@+id/item4"

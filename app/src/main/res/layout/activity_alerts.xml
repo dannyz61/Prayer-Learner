@@ -8,7 +8,7 @@
     android:background="#002028"
     android:padding="10dp"
     android:gravity="center"
-    tools:context=".alerts"
+    tools:context=".NamazAhadithAlerts"
     >
 
     <RelativeLayout
