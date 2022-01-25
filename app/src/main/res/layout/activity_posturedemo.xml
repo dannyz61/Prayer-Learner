@@ -8,41 +8,45 @@
     android:background="#002028"
     >
 
-    <ImageView
+
+    <pl.droidsonroids.gif.GifImageView
         android:id="@+id/imageView4"
-        android:layout_width="244dp"
-        android:layout_height="259dp"
+        android:layout_width="125dp"
+        android:layout_height="157dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="8dp"
-        app:srcCompat="@drawable/taqbeer" />
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/takbeer"
 
-    <ImageView
+        />
+
+
+    <pl.droidsonroids.gif.GifImageView
         android:id="@+id/imageView6"
-        android:layout_width="175dp"
-        android:layout_height="218dp"
-        android:layout_below="@+id/imageView4"
+        android:layout_width="133dp"
+        android:layout_height="158dp"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="205dp"
-        android:layout_marginTop="-7dp"
-        android:layout_marginEnd="31dp"
-        app:srcCompat="@drawable/jalsa" />
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="403dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/ruku" />
 
-    <ImageView
+    <pl.droidsonroids.gif.GifImageView
         android:id="@+id/imageView7"
-        android:layout_width="191dp"
-        android:layout_height="244dp"
-        android:layout_below="@+id/imageView6"
+        android:layout_width="131dp"
+        android:layout_height="143dp"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="197dp"
-        android:layout_marginTop="-40dp"
-        android:layout_marginEnd="22dp"
-        app:srcCompat="@drawable/sajda" />
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/sajdaa" />
 
     <TextView
         android:id="@+id/textView16"
@@ -69,7 +73,7 @@
         android:layout_marginStart="56dp"
         android:layout_marginTop="134dp"
         android:layout_marginEnd="233dp"
-        android:text="Jalsa"
+        android:text="Sajda"
         android:textColor="@color/white"
         android:textSize="28dp"
         android:textStyle="bold" />
@@ -84,7 +88,7 @@
         android:layout_marginStart="56dp"
         android:layout_marginTop="138dp"
         android:layout_marginEnd="241dp"
-        android:text="Sajda"
+        android:text="Ruku"
         android:textColor="@color/white"
         android:textSize="28dp"
         android:textStyle="bold" />
