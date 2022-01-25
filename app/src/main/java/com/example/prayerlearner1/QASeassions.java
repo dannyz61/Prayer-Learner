@@ -44,4 +44,9 @@ public class QASeassions extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void askanswer(View view) {
+        Intent intent=new Intent(this,newanswer.class);
+        startActivity(intent);
+    }
 }

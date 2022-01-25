@@ -68,6 +68,6 @@ public class ForgotPassword extends AppCompatActivity {
                 }
             }
         });
-    startActivity(new Intent(ForgotPassword.this, com.example.prayerlearner1.ForgotPasswordTwo.class));
+    startActivity(new Intent(ForgotPassword.this, ForgotPasswordTwo.class));
     }
 }

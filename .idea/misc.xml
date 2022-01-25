@@ -3,6 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Madni/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_forgot_password.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Madni/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_forgot_password_two.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Madni/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_home.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Madni/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_login.xml" value="0.12291666666666666" />
+        <entry key="..\:/Users/Madni/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_newanswer.xml" value="0.12291666666666666" />
+        <entry key="..\:/Users/Madni/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_qa.xml" value="0.2" />
+        <entry key="..\:/Users/Madni/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/switch_item.xml" value="0.16" />
+        <entry key="..\:/Users/Madni/AndroidStudioProjects/Prayer-Learner/app/src/main/res/menu/logout.xml" value="0.12291666666666666" />
+        <entry key="..\:/Users/Madni/AndroidStudioProjects/Prayer-Learner/app/src/main/res/menu/navigation_drawer.xml" value="0.2" />
         <entry key="..\:/Users/bilal/AndroidStudioProjects/Prayerlearner1/app/src/main/res/drawable/ic_alerts.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/bilal/AndroidStudioProjects/Prayerlearner1/app/src/main/res/drawable/ic_android_black_24dp.xml" value="0.25" />
         <entry key="..\:/Users/bilal/AndroidStudioProjects/Prayerlearner1/app/src/main/res/drawable/ic_fyp_logo.xml" value="0.22552083333333334" />
@@ -33,14 +42,12 @@
         <entry key="..\:/Users/bilal/AndroidStudioProjects/Week2/Prayer-Learnernew/app/src/main/res/layout/slider_item.xml" value="0.209375" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/drawable/actionbarcolor.xml" value="0.1359375" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.13541666666666666" />
-        <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.13333333333333333" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/drawable/ic_baseline_share_24.xml" value="0.13541666666666666" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/drawable/iccc_android_black_24dp.xml" value="0.13541666666666666" />
-        <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/drawable/side_nav_bar.xml" value="0.13333333333333333" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_alerts.xml" value="0.17300724637681159" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_forgot_password.xml" value="0.17300724637681159" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_forgot_password_two.xml" value="0.17300724637681159" />
-        <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_home.xml" value="0.176" />
+        <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_home.xml" value="0.17300724637681159" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_login.xml" value="0.144" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_nozakaah.xml" value="0.17300724637681159" />
@@ -55,12 +62,11 @@
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_qibladirection.xml" value="0.17300724637681159" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_report.xml" value="0.17300724637681159" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_sign_up.xml" value="0.2" />
-        <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/nav_header.xml" value="0.264" />
+        <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/nav_header.xml" value="0.25" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/slider_item.xml" value="0.17300724637681159" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/menu/activity_main_drawer.xml" value="0.11927083333333334" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/menu/activity_newac_drawer.xml" value="0.264" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/menu/best.xml" value="0.11927083333333334" />
-        <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/menu/logout.xml" value="0.264" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/menu/nav_drawer.xml" value="0.11927083333333334" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/menu/navigation_drawer.xml" value="0.264" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/menu/newac.xml" value="0.11927083333333334" />
@@ -72,12 +78,5 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
-  </component>
-  <component name="VisualizationToolProject">
-    <option name="state">
-      <ProjectState>
-        <option name="scale" value="0.176" />
-      </ProjectState>
-    </option>
   </component>
 </project>

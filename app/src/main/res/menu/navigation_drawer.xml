@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation-view" >
 
@@ -23,12 +24,13 @@
             android:title="About Us"
             android:iconTint="@color/white"/>
 
+
         <item
             android:id="@+id/item3"
             android:icon="@drawable/ic_baseline_settings_24"
-            android:title="Setting"
             android:iconTint="@color/white"
-            />
-    </group>
+            android:title="Setting" />
+          </group>
+
 
 </menu>
