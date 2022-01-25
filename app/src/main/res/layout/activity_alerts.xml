@@ -51,238 +51,198 @@
         android:id="@+id/linearLayout"
         android:layout_width="384dp"
         android:layout_height="318dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="6dp"
         android:background="#9444"
         android:gravity="center"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/label1"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="2dp">
-
-
-        <TableLayout
-            android:layout_width="363dp"
-            android:layout_height="match_parent"
-            android:stretchColumns="0,3">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="66dp"
-                android:text="Prayer Time"
-                android:textColor="@color/white"
-                android:textSize="34dp" />
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="88dp"
-                    android:layout_height="40dp"
-                    android:text="Fajar "
-                    android:textColor="@color/white"
-                    android:textSize="24dp" />
-
-                <TextView
-                    android:layout_width="1dp"
-                    android:layout_height="40dp"
-                    android:text="4 Feb"
-
-                    android:textColor="@color/white"
-                    android:textSize="24dp" />
-
-                <TextView
-                    android:layout_width="126dp"
-                    android:layout_height="40dp"
-                    android:text="  05:09am"
-                    android:textColor="@color/white"
-                    android:textSize="24dp" />
-
-                <TextView
-                    android:layout_width="1dp"
-                    android:layout_height="35dp"
-                    android:background="@drawable/clock"
-                    android:textSize="24dp" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:text="Sunrise"
-                    android:textColor="@color/white"
-                    android:textSize="24dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:text="4 Feb"
-                    android:textColor="@color/white"
-                    android:textSize="24dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:text="  05:09am"
-                    android:textColor="@color/white"
-                    android:textSize="24dp" />
-
-                <TextView
-                    android:layout_width="1dp"
-                    android:layout_height="35dp"
-                    android:background="@drawable/clock"
-                    android:textSize="24dp" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:text="Zuhr "
-                    android:textColor="@color/white"
-                    android:textSize="24dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="4 Feb"
-                    android:textColor="@color/white"
-                    android:textSize="24dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:text="  05:09am"
-                    android:textColor="@color/white"
-                    android:textSize="24dp" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="35dp"
-                    android:background="@drawable/clock"
-                    android:textSize="24dp" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:text="Asar "
-                    android:textColor="@color/white"
-                    android:textSize="24dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="4 Feb"
-                    android:textColor="@color/white"
-                    android:textSize="24dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:text="  05:09am"
-                    android:textColor="@color/white"
-                    android:textSize="24dp" />
-
-                <TextView
-                    android:layout_width="1dp"
-                    android:layout_height="35dp"
-                    android:background="@drawable/clock"
-                    android:textSize="24dp" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:text="Mghrib "
-                    android:textColor="@color/white"
-                    android:textSize="24dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:text="4 Feb"
-                    android:textColor="@color/white"
-                    android:textSize="24dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:text="  05:09am"
-                    android:textColor="@color/white"
-                    android:textSize="24dp" />
-
-                <TextView
-                    android:layout_width="1dp"
-                    android:layout_height="35dp"
-                    android:background="@drawable/clock"
-                    android:textSize="24dp" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:text="Isha "
-                    android:textColor="@color/white"
-                    android:textSize="24dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:text="4 Feb"
-                    android:textColor="@color/white"
-                    android:textSize="24dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:text="  05:09am"
-                    android:textColor="@color/white"
-                    android:textSize="24dp" />
-
-                <TextView
-                    android:layout_width="1dp"
-                    android:layout_height="35dp"
-                    android:background="@drawable/clock"
-                    android:textSize="24dp" />
-            </TableRow>
-
-
-        </TableLayout>
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/button4"
-
-        android:layout_width="142dp"
-        android:layout_height="56dp"
-        android:layout_marginBottom="40dp"
-        android:background="@drawable/roundbtn"
-        android:text="Back"
-        android:textColor="@color/white"
-        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.644" />
+        app:layout_constraintTop_toBottomOf="@+id/label1"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prayer Time"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/today_temp"
+                android:layout_centerHorizontal="true"
+                android:stretchColumns="0,1,2">
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="40dp"
+                        android:text="Sunrise"
+                        android:textColor="@color/white"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/sunrise"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="  05:09am"
+                        android:textColor="@color/white"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/clock" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="fill_horizontal"
+                        android:text="Fajar "
+                        android:textColor="@color/white"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/fajar"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="  05:09am"
+                        android:textColor="@color/white"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/clock"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="40dp"
+                        android:text="Zuhr "
+                        android:textColor="@color/white"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/zuhr"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="  05:09am"
+                        android:textColor="@color/white"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/clock" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="40dp"
+                        android:text="Asar "
+                        android:textColor="@color/white"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/asar"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="  05:09am"
+                        android:textColor="@color/white"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/clock" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="40dp"
+                        android:text="Mghrib "
+                        android:textColor="@color/white"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/mghrib"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="  05:09am"
+                        android:textColor="@color/white"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/clock"
+                        android:textSize="24dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="40dp"
+                        android:text="Isha "
+                        android:textColor="@color/white"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/isha"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="  05:09am"
+                        android:textColor="@color/white"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/clock"
+                        android:textSize="24dp" />
+                </TableRow>
+
+
+            </TableLayout>
+        </ScrollView>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

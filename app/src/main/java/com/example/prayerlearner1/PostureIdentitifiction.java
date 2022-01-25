@@ -56,4 +56,6 @@ public class PostureIdentitifiction extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+
+
 }

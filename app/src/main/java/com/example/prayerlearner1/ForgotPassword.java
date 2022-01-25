@@ -60,6 +60,9 @@ public class ForgotPassword extends AppCompatActivity {
                 if(task.isSuccessful())
                 {
                     Toast.makeText(ForgotPassword.this, "Reset Link has been sent to your Email Address.", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(ForgotPassword.this, ForgotPasswordTwo.class));
+
+
                 }
                 else
                 {
