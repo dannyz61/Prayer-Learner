@@ -36,6 +36,7 @@
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.13333333333333333" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/drawable/ic_baseline_share_24.xml" value="0.13541666666666666" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/drawable/iccc_android_black_24dp.xml" value="0.13541666666666666" />
+        <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/drawable/shape.xml" value="0.1095" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/drawable/side_nav_bar.xml" value="0.13333333333333333" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_alerts.xml" value="0.17300724637681159" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_ask_question.xml" value="0.176" />
@@ -53,11 +54,15 @@
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_posture_demo.xml" value="0.17300724637681159" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_posture_identification.xml" value="0.17300724637681159" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_posturedemo.xml" value="0.17300724637681159" />
-        <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_qa.xml" value="0.12916666666666668" />
+        <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_qa.xml" value="0.2" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_qibladirection.xml" value="0.17300724637681159" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_report.xml" value="0.17300724637681159" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/activity_sign_up.xml" value="0.2" />
+        <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/border.xml" value="0.13179347826086957" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/nav_header.xml" value="0.264" />
+        <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/question_item_view.xml" value="0.1" />
+        <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/shape.xml" value="0.1" />
+        <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/shape1.xml" value="0.1" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/layout/slider_item.xml" value="0.17300724637681159" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/menu/activity_main_drawer.xml" value="0.11927083333333334" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/menu/activity_newac_drawer.xml" value="0.264" />

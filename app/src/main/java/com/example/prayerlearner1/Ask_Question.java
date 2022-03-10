@@ -30,6 +30,7 @@ public class Ask_Question extends AppCompatActivity {
     Switch identity_switch;
     FirebaseAuth fauth;
     String username;
+    public long id=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +45,7 @@ public class Ask_Question extends AppCompatActivity {
            public void onDataChange(@NonNull DataSnapshot snapshot) {
 
               username=snapshot.child("Users").child(uid).child("name").getValue(String.class);
+               id=snapshot.getChildrenCount();
            }
 
            @Override
@@ -65,9 +67,11 @@ public class Ask_Question extends AppCompatActivity {
                     username="Anonymous";
                 }
                 QaModelClass obj=null;
-                obj=new QaModelClass("",username,q,"",time,"");
-                 fbobj.child("QA").setValue(obj);
+
+                obj=new QaModelClass("",username,q,"",time,"",String.valueOf(++id));
+                 fbobj.child("QA").child(obj.getQuestionuid()).setValue(obj);
             finish();
+
                 Toast.makeText(Ask_Question.this, "Question Uploaded. Successfully", Toast.LENGTH_SHORT).show();
             }
         });

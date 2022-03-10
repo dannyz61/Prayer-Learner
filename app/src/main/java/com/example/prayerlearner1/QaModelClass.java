@@ -1,7 +1,12 @@
 package com.example.prayerlearner1;
 
 public class QaModelClass {
-    String scholarname,username,question,answer,questime,anstime;
+    String scholarname;
+    String username;
+    String question;
+    String answer;
+    String questime;
+    String anstime;
 
     public String getScholarname() {
         return scholarname;
@@ -51,15 +56,28 @@ public class QaModelClass {
         this.anstime = anstime;
     }
 
-    public QaModelClass() {
+    public String getQuestionuid() {
+        return questionuid;
     }
 
-    public QaModelClass(String scholarname, String username, String question, String answer, String questime, String anstime) {
+    public void setQuestionuid(String questionuid) {
+        this.questionuid = questionuid;
+    }
+
+    public QaModelClass(String scholarname, String username, String question, String answer, String questime, String anstime, String questionuid) {
         this.scholarname = scholarname;
         this.username = username;
         this.question = question;
         this.answer = answer;
         this.questime = questime;
         this.anstime = anstime;
+        this.questionuid = questionuid;
     }
+
+    public QaModelClass() {
+    }
+
+    String questionuid;
+
+
 }

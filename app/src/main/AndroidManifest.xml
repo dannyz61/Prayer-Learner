@@ -15,7 +15,7 @@
         android:theme="@style/Theme.Design.Light">
         <activity
             android:name=".Ask_Question"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Details"
             android:exported="false" />
