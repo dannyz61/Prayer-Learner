@@ -82,7 +82,7 @@ public class NamazAhadithAlerts extends AppCompatActivity {
             public void onResponse(Call<NamazTimeModelClass> call, Response<NamazTimeModelClass> response) {
                 Toast.makeText(NamazAhadithAlerts.this, "Success", Toast.LENGTH_SHORT).show();
                 NamazTimeModelClass data=response.body();
-                loc.setText(data.getCity()+"     "+data.getDate());
+                loc.setText(data.getCity());
                 today today=data.getTodayObject();
                 sunrise.setText(today.getSunrise());
                 fajar.setText(today.getFajr());

@@ -24,6 +24,7 @@ public class QiblaDirection extends AppCompatActivity implements SensorEventList
     Sensor sensor;
     SensorManager sensorManager;
     float currentDegree;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         ActionBar actionBar = getSupportActionBar();

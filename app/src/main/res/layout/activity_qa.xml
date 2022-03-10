@@ -10,20 +10,20 @@
 
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="95dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="16dp"
+        android:id="@+id/btn_ask_question"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/roundbtn"
-        android:text="Back"
-
+        android:onClick="askanswer"
+        android:text="Ask Questions"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button24"
-        app:layout_constraintVertical_bias="0.521"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qarecycler"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <SearchView
         android:id="@+id/searchView"
@@ -38,46 +38,6 @@
         app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="110dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="44dp"
-        android:background="@drawable/roundbtn"
-        android:text="New Asnwers"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchView"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="44dp"
-        android:background="@drawable/roundbtn"
-        android:text="Categories"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toEndOf="@+id/button8"
-        app:layout_constraintTop_toBottomOf="@+id/searchView"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="130dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="44dp"
-        android:background="@drawable/roundbtn"
-        android:onClick="askanswer"
-        android:text="Ask Questions"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/searchView"
-        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/textView3"
@@ -103,91 +63,17 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button8" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="TextContrastCheck" />
 
-    <View
-        android:id="@+id/view"
-        android:layout_width="413dp"
-        android:layout_height="369dp"
-        android:layout_marginTop="20dp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/qarecycler"
+        android:layout_width="409dp"
+        android:layout_height="330dp"
+        android:layout_marginTop="1dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-    <Button
-        android:id="@+id/button18"
-        android:layout_width="411dp"
-        android:layout_height="52dp"
-        android:background="#9444"
-        android:text="She Makes a Summary of the curriculum and sells it to students and she does not allow them to make photocopies"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button23"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <Button
-        android:id="@+id/button22"
-        android:layout_width="411dp"
-        android:layout_height="52dp"
-        android:background="#9444"
-        android:onClick="showanswer"
-        android:text="There is no zakaah on wealth that has been donated to build a mosque"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view" />
-
-    <Button
-        android:id="@+id/button23"
-        android:layout_width="411dp"
-        android:layout_height="52dp"
-        android:background="#9444"
-        android:text="The fate of those who commit major sins, if they die persisting in those sins"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button22" />
-
-    <Button
-        android:id="@+id/button19"
-        android:layout_width="411dp"
-        android:layout_height="52dp"
-        android:background="#9444"
-        android:text="Is it permissible to put the sperm of the husband and the egg of the wife in the uterus of the second wife?"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button18" />
-
-    <Button
-        android:id="@+id/button20"
-        android:layout_width="411dp"
-        android:layout_height="52dp"
-        android:background="#9444"
-        android:text="Can he pray behind someone who does not believe that Muhammad was the last of the prophets?"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button19" />
-
-    <Button
-        android:id="@+id/button21"
-        android:layout_width="411dp"
-        android:layout_height="52dp"
-        android:background="#9444"
-        android:text="Ruling on always reciting as-Sajdah and al-Insaan in Fajr on Fridays"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button20" />
-
-    <Button
-        android:id="@+id/button24"
-        android:layout_width="411dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="5dp"
-        android:background="#9444"
-        android:text="Does a menstruating woman have to change her clothes once her period ends?"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button21" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

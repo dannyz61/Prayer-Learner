@@ -57,7 +57,7 @@ public class PostureInspection extends AppCompatActivity  implements SensorEvent
         meg0=findViewById(R.id.meg_0);
         meg1=findViewById(R.id.meg_1);
         meg2=findViewById(R.id.meg_2);
-        acc0=findViewById(R.id.acc_0);
+        acc0=findViewById(R.id.scholar_name_view);
         acc1=findViewById(R.id.acc_1);
         acc2=findViewById(R.id.acc_2);
         gyr0=findViewById(R.id.gyr_0);
