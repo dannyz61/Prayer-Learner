@@ -3,8 +3,8 @@ package com.example.prayerlearner1;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.speech.tts.TextToSpeech;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -22,7 +22,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.Calendar;
 import java.util.Date;
 
-public class Ask_Question extends AppCompatActivity {
+public class AskQuestion extends AppCompatActivity {
     DatabaseReference fbobj;
     Button btb_submit;
     EditText question;
@@ -30,14 +30,14 @@ public class Ask_Question extends AppCompatActivity {
     Switch identity_switch;
     FirebaseAuth fauth;
     String username;
-    public long id=0;
+    public long id;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ask_question);
         fbobj= FirebaseDatabase.getInstance("https://prayerlearner-default-rtdb.firebaseio.com/").getReference();
     question=findViewById(R.id.str_question);
-
+        id=0;
         fauth=FirebaseAuth.getInstance();
         uid=fauth.getCurrentUser().getUid().toString();
         fbobj.addValueEventListener(new ValueEventListener() {
@@ -45,7 +45,7 @@ public class Ask_Question extends AppCompatActivity {
            public void onDataChange(@NonNull DataSnapshot snapshot) {
 
               username=snapshot.child("Users").child(uid).child("name").getValue(String.class);
-               id=snapshot.getChildrenCount();
+               id=snapshot.child("QA").getChildrenCount();
            }
 
            @Override
@@ -67,12 +67,14 @@ public class Ask_Question extends AppCompatActivity {
                     username="Anonymous";
                 }
                 QaModelClass obj=null;
-
+                Log.d("Danial", "ID VALUE "+id);
                 obj=new QaModelClass("",username,q,"",time,"",String.valueOf(++id));
+                Log.d("Danial", "OBJ VALUE "+obj.getQuestionuid());
                  fbobj.child("QA").child(obj.getQuestionuid()).setValue(obj);
             finish();
-
-                Toast.makeText(Ask_Question.this, "Question Uploaded. Successfully", Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(AskQuestion.this, QASeassions.class);
+                startActivity(intent);
+                Toast.makeText(AskQuestion.this, "Question Uploaded. Successfully", Toast.LENGTH_SHORT).show();
             }
         });
     }

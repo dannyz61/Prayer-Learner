@@ -6,18 +6,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import com.firebase.ui.database.FirebaseRecyclerAdapter;
-import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -26,7 +20,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class QASeassions extends AppCompatActivity {
+public class QASeassions extends AppCompatActivity implements MyQuestionAdapter.OnclickQauestionLisnter {
     Button btn_ask;
     RecyclerView qaview;
     RecyclerView.LayoutManager layoutManager;
@@ -89,7 +83,23 @@ public class QASeassions extends AppCompatActivity {
     }
 
     public void askanswer(View view) {
-        Intent intent=new Intent(this, Ask_Question.class);
+        Intent intent=new Intent(this, AskQuestion.class);
         startActivity(intent);
+        finish();
     }
+
+    @Override
+    public void OnQuestionClick(int position) {
+        QaModelClass q=qlist.get(position);
+
+                Intent intent = new Intent(this, QuestionDetails.class);
+                intent.putExtra("scholarname",q.getScholarname());
+                intent.putExtra("username",q.getUsername());
+                intent.putExtra("question",q.getQuestion());
+                intent.putExtra("answer",q.getAnswer());
+                intent.putExtra("questime",q.getQuestime());
+                intent.putExtra("anstime",q.getAnstime());
+        startActivity(intent);
+        finish();
+            }
 }

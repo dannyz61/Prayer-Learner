@@ -14,10 +14,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light">
         <activity
-            android:name=".Ask_Question"
+            android:name=".AskQuestion"
             android:exported="true" />
         <activity
-            android:name=".Details"
+            android:name=".QuestionDetails"
             android:exported="false" />
         <activity
             android:name=".PostureIdentitifiction"

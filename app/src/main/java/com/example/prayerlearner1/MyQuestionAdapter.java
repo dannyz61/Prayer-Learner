@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.text.TextUtils;
 import android.text.method.ScrollingMovementMethod;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,7 +19,7 @@ import java.util.List;
 public class MyQuestionAdapter extends RecyclerView.Adapter<MyQuestionAdapter.MyQuestionViewHolder> {
 
     Context context;
-   List<QaModelClass> listdata;
+    List<QaModelClass> listdata;
 
     public MyQuestionAdapter(Context context, List<QaModelClass> listdata) {
         this.context = context;
@@ -28,28 +29,16 @@ public class MyQuestionAdapter extends RecyclerView.Adapter<MyQuestionAdapter.My
     @NonNull
     @Override
     public MyQuestionViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view= LayoutInflater.from(context).inflate(R.layout.question_item_view,parent,false);
+        View view = LayoutInflater.from(context).inflate(R.layout.question_item_view, parent, false);
         return new MyQuestionViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull MyQuestionViewHolder holder, int position) {
-        QaModelClass q=listdata.get(position);
-        String a=q.getQuestion();
+        QaModelClass q = listdata.get(position);
+        String a = q.getQuestion();
         holder.question.setText(a);
-//        holder.question.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent();
-//                intent.putExtra("ans",listdata.get(position).getAnstime());
-//                intent.putExtra("ques",listdata.get(position).getQuestime());
-//                intent.putExtra("ans",listdata.get(position).getAnstime());
-//                intent.putExtra("ans",listdata.get(position).getAnstime());
-//                intent.putExtra("ans",listdata.get(position).getAnstime());
-//                intent.putExtra("ans",listdata.get(position).getAnstime());
-//
-//            }
-//        });
+
 
     }
 
@@ -57,14 +46,26 @@ public class MyQuestionAdapter extends RecyclerView.Adapter<MyQuestionAdapter.My
     public int getItemCount() {
         return listdata.size();
     }
-    public class MyQuestionViewHolder extends RecyclerView.ViewHolder{
+
+    public class MyQuestionViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         EditText question;
+
         public MyQuestionViewHolder(@NonNull View itemView) {
             super(itemView);
-            question =itemView.findViewById(R.id.single_value_question);
+            question = itemView.findViewById(R.id.single_value_question);
 
         }
+
+        @Override
+        public void onClick(View v) {
+
+        }
+    }
+
+    public interface OnclickQauestionLisnter{
+        void OnQuestionClick(int position);
+
     }
 
 }
