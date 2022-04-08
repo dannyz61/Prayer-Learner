@@ -9,12 +9,14 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.toolbox.HttpResponse;
 import com.google.gson.Gson;
 import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
 import com.smarteist.autoimageslider.SliderAnimations;
 import com.smarteist.autoimageslider.SliderView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -26,7 +28,7 @@ public class NamazAhadithAlerts extends AppCompatActivity {
     Button btn4;
     SliderView sliderView;
     TextView loc,fajar,zuhr,asar,maghrib,isha,sunrise;
-    String uRL="https://dailyprayer.abdulrcs.repl.co/api/";
+    String uRL="https://api.pray.zone/v2/times/";
     int[] images = {R.drawable.h1,
             R.drawable.h2,
             R.drawable.h3,
@@ -78,27 +80,30 @@ public class NamazAhadithAlerts extends AppCompatActivity {
        NamazTimeApi api=retrofit.create(NamazTimeApi.class);
         Call<NamazTimeModelClass> call=api.getime();
         call.enqueue(new Callback<NamazTimeModelClass>() {
-            @Override
-            public void onResponse(Call<NamazTimeModelClass> call, Response<NamazTimeModelClass> response) {
-                Toast.makeText(NamazAhadithAlerts.this, "Success", Toast.LENGTH_SHORT).show();
-                NamazTimeModelClass data=response.body();
-                loc.setText(data.getCity());
-                today today=data.getTodayObject();
-                sunrise.setText(today.getSunrise());
-                fajar.setText(today.getFajr());
-                zuhr.setText(today.getDhuhr());
-                asar.setText(today.getAsr());
-                maghrib.setText(today.getMaghrib());
-                isha.setText(today.getIsha());
+                         @Override
+                         public void onResponse(Call<NamazTimeModelClass> call, Response<NamazTimeModelClass> response) {
+                             Toast.makeText(NamazAhadithAlerts.this, "Success", Toast.LENGTH_SHORT).show();
+                             NamazTimeModelClass data=response.body();
+                             loc.setText(data.getResults().getLocation().getCity());
+                             TimesModelClass today=data.getResults().datetime.get(0).times;
+                             sunrise.setText(today.getSunrise());
+                             fajar.setText(today.getFajr());
+                             zuhr.setText(today.getDhuhr());
+                             asar.setText(today.getAsr());
+                             maghrib.setText(today.getMaghrib());
+                             isha.setText(today.getIsha());
+                         }
 
-            }
-
-            @Override
-            public void onFailure(Call<NamazTimeModelClass> call, Throwable t) {
-                Toast.makeText(NamazAhadithAlerts.this, "Failure", Toast.LENGTH_SHORT).show();
-                t.getCause();
-            }
-        });
+                         @Override
+                         public void onFailure(Call<NamazTimeModelClass> call, Throwable t) {
+                             Toast.makeText(NamazAhadithAlerts.this, "Failure", Toast.LENGTH_SHORT).show();
+                             t.getCause();
+                         }
+                     });
+//        HttpResponse<String> response = Unirest.get("https://api.sunnah.com/v1/hadiths/random")
+//                .header("x-api-key", "SqD712P3E82xnwOAEOkGd5JZH8s9wRR24TqNFzjk")
+//                .body("{}")
+//                .asString();
 
 //        Retrofit retrofit1= new Retrofit.Builder().baseUrl(uRL).addConverterFactory(GsonConverterFactory.create()).build();
 //        NamazTimeApi api1=retrofit.create(NamazTimeApi.class);

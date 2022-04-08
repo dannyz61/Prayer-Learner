@@ -14,6 +14,8 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="16dp"
         android:background="#9444"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
         android:text="Scholar name"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,6 +28,8 @@
         android:layout_marginStart="52dp"
         android:layout_marginTop="56dp"
         android:background="#9444"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
         android:text="Molana TARIQ JAMEEL"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,17 +44,21 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="68dp"
         android:background="#9444"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
         android:text="User"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/scholar_name_view"
+        android:id="@+id/user_name_view"
         android:layout_width="106dp"
         android:layout_height="21dp"
         android:layout_marginTop="17dp"
         android:background="#9444"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
         android:text="Molana TARIQ JAMEEL"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -68,11 +76,13 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/questionview"
         android:layout_width="348dp"
         android:layout_height="113dp"
         android:layout_marginTop="24dp"
         android:background="#9444"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
         android:text="Question : The people of the neighbourhood donated wealth to build a mosque, but we were not able to build it for various reasons. One full Hijri year has passed: is it obligatory to give zakaah on this wealth?"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/view2"
@@ -86,26 +96,30 @@
         android:layout_height="24dp"
         android:layout_marginTop="16dp"
         android:background="#9444"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
         android:text="Answer"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintBottom_toTopOf="@+id/ansview"
         app:layout_constraintEnd_toEndOf="@+id/view2"
         app:layout_constraintHorizontal_bias="0.19"
         app:layout_constraintStart_toStartOf="@+id/view2"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/questionview"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/ansview"
         android:layout_width="319dp"
         android:layout_height="195dp"
         android:layout_marginTop="52dp"
         android:background="#9444"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
         android:text=" Praise be to Allah.  The wealth that has been allocated for a public interest, such as mosques or to be given to the poor, is not subject to zakaah, because it is not owned by a particular individual.  An-Nawawi (may Allah have mercy on him) said in al-Majmoo‘ (5/311): If the livestock has been allocated for a public interest, such as the poor, mosques, fighters in Allah’s cause, orphans and the like, then no zakaah is due on it, because it does not belong to a particular individual."
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/view2"
         app:layout_constraintStart_toStartOf="@+id/view2"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/questionview" />
 
     <Button
         android:id="@+id/button14"
@@ -120,17 +134,19 @@
         app:layout_constraintTop_toBottomOf="@+id/view2" />
 
     <TextView
-        android:id="@+id/qtime"
+        android:id="@+id/qtimeview"
         android:layout_width="185dp"
         android:layout_height="27dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
         android:gravity="center"
         android:text="TextView"
         android:textColor="@color/white"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
-        tools:layout_editor_absoluteX="199dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionview" />
 
     <TextView
-        android:id="@+id/atime"
+        android:id="@+id/anstimeview"
         android:layout_width="187dp"
         android:layout_height="23dp"
         android:layout_marginEnd="24dp"
@@ -140,7 +156,7 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/ansview"
         app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

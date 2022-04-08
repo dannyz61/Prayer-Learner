@@ -20,7 +20,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class QASeassions extends AppCompatActivity implements MyQuestionAdapter.OnclickQauestionLisnter {
+public class QASeassions extends AppCompatActivity  {
     Button btn_ask;
     RecyclerView qaview;
     RecyclerView.LayoutManager layoutManager;
@@ -88,18 +88,5 @@ public class QASeassions extends AppCompatActivity implements MyQuestionAdapter.
         finish();
     }
 
-    @Override
-    public void OnQuestionClick(int position) {
-        QaModelClass q=qlist.get(position);
 
-                Intent intent = new Intent(this, QuestionDetails.class);
-                intent.putExtra("scholarname",q.getScholarname());
-                intent.putExtra("username",q.getUsername());
-                intent.putExtra("question",q.getQuestion());
-                intent.putExtra("answer",q.getAnswer());
-                intent.putExtra("questime",q.getQuestime());
-                intent.putExtra("anstime",q.getAnstime());
-        startActivity(intent);
-        finish();
-            }
 }

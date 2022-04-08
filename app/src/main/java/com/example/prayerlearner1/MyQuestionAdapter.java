@@ -38,6 +38,22 @@ public class MyQuestionAdapter extends RecyclerView.Adapter<MyQuestionAdapter.My
         QaModelClass q = listdata.get(position);
         String a = q.getQuestion();
         holder.question.setText(a);
+        holder.question.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                    Intent intent = new Intent(context, QuestionDetails.class);
+                    intent.putExtra("scholarname",q.getScholarname());
+                    intent.putExtra("username",q.getUsername());
+                    intent.putExtra("question",q.getQuestion());
+                    intent.putExtra("answer",q.getAnswer());
+                    intent.putExtra("questime",q.getQuestime());
+                    intent.putExtra("anstime",q.getAnstime());
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    context.startActivity(intent);
+
+
+            }
+        });
 
 
     }
@@ -47,7 +63,7 @@ public class MyQuestionAdapter extends RecyclerView.Adapter<MyQuestionAdapter.My
         return listdata.size();
     }
 
-    public class MyQuestionViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public class MyQuestionViewHolder extends RecyclerView.ViewHolder {
 
         EditText question;
 
@@ -57,16 +73,8 @@ public class MyQuestionAdapter extends RecyclerView.Adapter<MyQuestionAdapter.My
 
         }
 
-        @Override
-        public void onClick(View v) {
-
-        }
     }
 
-    public interface OnclickQauestionLisnter{
-        void OnQuestionClick(int position);
-
-    }
 
 }
 

@@ -11,7 +11,7 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 
 public interface NamazTimeApi {
-    @GET("faisalabad")
+    @GET("today.json?city=faisalabad")
     Call<NamazTimeModelClass> getime();
 
 }

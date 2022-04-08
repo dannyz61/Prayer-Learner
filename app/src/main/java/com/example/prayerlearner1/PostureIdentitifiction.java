@@ -20,7 +20,6 @@ public class PostureIdentitifiction extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("Posture Identification");
         actionBar.setDisplayHomeAsUpEnabled(true);
-
         bins1.setOnClickListener(new View.OnClickListener() {
 
             @Override

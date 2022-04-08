@@ -9,6 +9,7 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
@@ -22,8 +23,10 @@ import com.opencsv.CSVWriter;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class PostureInspection extends AppCompatActivity  implements SensorEventListener {
     SensorManager sensorManager, sensorManager1, sensorManager2;
@@ -57,7 +60,7 @@ public class PostureInspection extends AppCompatActivity  implements SensorEvent
         meg0=findViewById(R.id.meg_0);
         meg1=findViewById(R.id.meg_1);
         meg2=findViewById(R.id.meg_2);
-        acc0=findViewById(R.id.scholar_name_view);
+        acc0=findViewById(R.id.user_name_view);
         acc1=findViewById(R.id.acc_1);
         acc2=findViewById(R.id.acc_2);
         gyr0=findViewById(R.id.gyr_0);
@@ -80,7 +83,10 @@ public class PostureInspection extends AppCompatActivity  implements SensorEvent
         float x = values[0];
         float y = values[1];
         float z = values[2];
-        data.add(new String[]{" ", String.valueOf((float) event.values[0]), String.valueOf((float) event.values[1]), String.valueOf((float) event.values[2]), " ", " ", " ", " ", " ", " "});
+        BigDecimal bd = new BigDecimal(event.timestamp);
+        long val = bd.longValue();
+        Log.d("danny", "getMyAccelerometerValues: "+val);
+        data.add(new String[]{String.valueOf(val), String.valueOf((float) event.values[0]), String.valueOf((float) event.values[1]), String.valueOf((float) event.values[2]), " ", " ", " ", " ", " ", " "});
         acc0.setText(String.valueOf(x));
         acc1.setText(String.valueOf(y));
         acc2.setText(String.valueOf(z));
@@ -94,7 +100,9 @@ public class PostureInspection extends AppCompatActivity  implements SensorEvent
         float x = values[0];
         float y = values[1];
         float z = values[2];
-        data.add(new String[]{"", "", "", " ", String.valueOf((float) event.values[0]), String.valueOf((float) event.values[1]), String.valueOf((float) event.values[2]), " ", " ", " "});
+        BigDecimal bd = new BigDecimal(event.timestamp);
+        long val = bd.longValue();
+        data.add(new String[]{"", "", "", String.valueOf(val), String.valueOf((float) event.values[0]), String.valueOf((float) event.values[1]), String.valueOf((float) event.values[2]), " ", " ", " "});
         gyr0.setText(String.valueOf(x));
         gyr1.setText(String.valueOf(y));
         gyr2.setText(String.valueOf(z));
@@ -108,7 +116,9 @@ public class PostureInspection extends AppCompatActivity  implements SensorEvent
         float x = values[0];
         float y = values[1];
         float z = values[2];
-        data.add(new String[]{" ", "", "", "", "", "", "", String.valueOf((float) event.values[0]), String.valueOf((float) event.values[1]), String.valueOf((float) event.values[2])});
+        BigDecimal bd = new BigDecimal(event.timestamp);
+        long val = bd.longValue();
+        data.add(new String[]{" ", "", "", "", "", "", String.valueOf(val), String.valueOf((float) event.values[0]), String.valueOf((float) event.values[1]), String.valueOf((float) event.values[2])});
         meg0.setText(String.valueOf(x));
         meg1.setText(String.valueOf(y));
         meg2.setText(String.valueOf(z));
@@ -147,9 +157,9 @@ public class PostureInspection extends AppCompatActivity  implements SensorEvent
     @Override
     protected void onPause() {
         super.onPause();
-        sensorManager.unregisterListener(this);
-        sensorManager1.unregisterListener(this);
-        sensorManager2.unregisterListener(this);
+//        sensorManager.unregisterListener(this);
+//        sensorManager1.unregisterListener(this);
+//        sensorManager2.unregisterListener(this);
 
 
     }

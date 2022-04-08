@@ -177,7 +177,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <TextView
-        android:id="@+id/scholar_name_view"
+        android:id="@+id/user_name_view"
         android:layout_width="83dp"
         android:layout_height="19dp"
         android:layout_marginStart="20dp"
@@ -186,7 +186,7 @@
         android:textColor="@color/white"
         android:textColorHighlight="@color/white"
         app:layout_constraintStart_toEndOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/questionview" />
 
     <TextView
         android:id="@+id/gyr_1"
@@ -211,7 +211,7 @@
         android:textColorHighlight="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/acc_2"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/scholar_name_view"
+        app:layout_constraintStart_toEndOf="@+id/user_name_view"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <TextView
@@ -224,10 +224,10 @@
         android:textColor="@color/white"
         android:textColorHighlight="@color/white"
         app:layout_constraintStart_toEndOf="@+id/textView12"
-        app:layout_constraintTop_toBottomOf="@+id/scholar_name_view" />
+        app:layout_constraintTop_toBottomOf="@+id/user_name_view" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/questionview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="444dp"
@@ -263,7 +263,7 @@
         android:text="Y-Axis"
         android:textColor="@color/white"
         android:textColorHighlight="@color/white"
-        app:layout_constraintEnd_toStartOf="@+id/textView10"
+        app:layout_constraintEnd_toStartOf="@+id/ansview"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -289,7 +289,7 @@
         android:textColor="@color/white"
         android:textColorHighlight="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+        app:layout_constraintTop_toBottomOf="@+id/ansview" />
 
     <TextView
         android:id="@+id/meg_2"
@@ -304,7 +304,7 @@
         app:layout_constraintTop_toBottomOf="@+id/gyr_2" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/ansview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="444dp"
