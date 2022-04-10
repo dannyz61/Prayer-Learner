@@ -17,9 +17,6 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.chaquo.python.PyObject;
-import com.chaquo.python.Python;
-import com.chaquo.python.android.AndroidPlatform;
 import com.opencsv.CSVWriter;
 
 import java.io.FileWriter;
@@ -135,12 +132,7 @@ public class PostureResult extends AppCompatActivity implements SensorEventListe
             Toast.makeText(this, "Data Exported "+csv+" Succesfully", Toast.LENGTH_LONG).show();
             writer1.writeAll(data); // data is adding to csv
             writer1.close();
-            if (! Python.isStarted()) {
-                Python.start(new AndroidPlatform(this));
-            }
-            Python py=Python.getInstance();
-            PyObject pyobj = py.getModule("myscript");
-            PyObject obj = pyobj.callAttr("main");
+
 
         } catch (IOException e) {
             Toast.makeText(this, "File not Created \nYour System Storage is not acceccible", Toast.LENGTH_SHORT).show();
@@ -151,4 +143,5 @@ public class PostureResult extends AppCompatActivity implements SensorEventListe
         }
 
     }
+
 }
