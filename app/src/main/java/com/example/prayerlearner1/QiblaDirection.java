@@ -74,7 +74,7 @@ public class QiblaDirection extends AppCompatActivity implements SensorEventList
     @Override
     public void onSensorChanged(SensorEvent event) {
         int degree =Math.round(event.values[0]) ;
-        RotateAnimation animation=new RotateAnimation(currentDegree,-degree,Animation.RELATIVE_TO_SELF, 0.5f,Animation.RELATIVE_TO_SELF, 0.5f);
+        RotateAnimation animation=new RotateAnimation(-currentDegree-60,-degree,Animation.RELATIVE_TO_SELF, 0.5f,Animation.RELATIVE_TO_SELF, 0.5f);
         animation.setDuration( 500) ;
         animation. setFillAfter( true) ;
         qibla_view.setAnimation (animation) ;

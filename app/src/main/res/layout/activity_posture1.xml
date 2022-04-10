@@ -73,49 +73,53 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/taqbeer_check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="67dp"
         android:layout_marginEnd="26dp"
         android:background="@drawable/roundbtn"
+        android:onClick="taqbeer_check"
         android:text="check"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/qiyam_check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:background="@drawable/roundbtn"
+        android:onClick="qiyam_check"
         android:text="check"
         android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="@+id/button11"
-        app:layout_constraintTop_toBottomOf="@+id/button11" />
+        app:layout_constraintStart_toStartOf="@+id/rakuh_check"
+        app:layout_constraintTop_toBottomOf="@+id/rakuh_check" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/rakuh_check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:background="@drawable/roundbtn"
+        android:onClick="rakuh_check"
         android:text="check"
         android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="@+id/button6"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
+        app:layout_constraintStart_toStartOf="@+id/taqbeer_check"
+        app:layout_constraintTop_toBottomOf="@+id/taqbeer_check" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/sajda_check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:background="@drawable/roundbtn"
+        android:onClick="sadja_check"
         android:text="check"
         android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="@+id/button9"
-        app:layout_constraintTop_toBottomOf="@+id/button9" />
+        app:layout_constraintStart_toStartOf="@+id/qiyam_check"
+        app:layout_constraintTop_toBottomOf="@+id/qiyam_check" />
 
     <!--    posture 2-->
 
