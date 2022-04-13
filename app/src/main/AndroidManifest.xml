@@ -15,6 +15,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light">
         <activity
+            android:name=".Python_Code"
+            android:exported="true"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
             android:name=".PostureResult"
             android:exported="false" />
         <activity
