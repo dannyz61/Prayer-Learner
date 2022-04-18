@@ -84,7 +84,7 @@ public class PostureResult extends AppCompatActivity implements SensorEventListe
         float z = values[2];
         BigDecimal bd = new BigDecimal(event.timestamp);
         long val = bd.longValue();
-        Log.d("danny", "getMyAccelerometerValues: "+val);
+
         data.add(new String[]{"",String.valueOf(val), String.valueOf((float) event.values[0]), String.valueOf((float) event.values[1]), String.valueOf((float) event.values[2]),"", "", "", "", "", "", ""});
          X1.add(values[0]);
          Y1.add(values[1]);
@@ -171,15 +171,15 @@ public class PostureResult extends AppCompatActivity implements SensorEventListe
         double avgX1,avgX2,avgX3,avgY1,avgY2,avgY3,avgZ1,avgZ2,avgZ3=0;
         double accavgX1,accavgX2,accavgX3,accavgY1,accavgY2,accavgY3,accavgZ1,accavgZ2,accavgZ3;
         //read from file
-        accavgX1=3.5;
-        accavgX2=3.5;
-        accavgX3=3.5;
-        accavgY1=3.5;
-        accavgY2=3.5;
-        accavgY3=3.5;
-        accavgZ1=3.5;
-        accavgZ2=3.5;
-        accavgZ3=3.5;
+        accavgX1=0.428321;
+        accavgX2=-0.49118;
+        accavgX3=3.781342;
+        accavgY1=0.055849411;
+        accavgY2=-0.180600213;
+        accavgY3=-0.245599428;
+        accavgZ1=-29.56888844;
+        accavgZ2=3.722222167;
+        accavgZ3=-9.464444374;
        for(int j=0;j<X1.size();j++)
        {
 
@@ -235,38 +235,49 @@ public class PostureResult extends AppCompatActivity implements SensorEventListe
         avgX3=sum7/X3.size();
         avgY3=sum8/Y3.size();
         avgZ3=sum9/Z3.size();
-
-    avg_t.setText(String.valueOf(avgX1));
+        avg_t.setText(String.valueOf(avgX1));
        Toast.makeText(getApplicationContext(),"average of  X axix of accelerometer is "+avgX1,Toast.LENGTH_LONG).show();
        double accX1=0,accX2=0,accX3=0,accY1=0,accY2,accY3,accZ1=0,accZ2,accZ3=0;
        //for accuracy of X1.......
-  if(accavgX1>avgX1)
-  {
-      accX1=accavgX1-avgX1;
-  }
-  else if (accavgX1<avgX1)
-  {
-      accX1=avgX1-accavgX1;
-  }
-        //for accuracy of Y1.......
-        if(accavgX1>avgX1)
+//  if(accavgX1>avgX1)
+//  {
+//      accX1=accavgX1-avgX1;
+//  }
+//  else if (accavgX1<avgX1)
+//  {
+//      accX1=avgX1-accavgX1;
+//  }
+//        //for accuracy of Y1.......
+//        if(accavgX1>avgX1)
+//        {
+//            accX1=accavgY1-avgY1;
+//        }
+//        else if (accavgY1<avgY1)
+//        {
+//            accY1=avgY1-accavgY1;
+//        }
+////for accuracy Z1
+//        if(accavgZ1>avgZ1)
+//        {
+//            accZ1=accavgZ1-avgZ1;
+//        }
+//        else if (accavgZ1<avgZ1)
+//        {
+//            accZ1=avgZ1-accavgZ1;
+//        }
+        accX1=((avgX1/accavgX1)*100);
+        accX2=+((avgX1/accavgX1)*100);
+        accX3=+((avgX1/accavgX1)*100);
+        if(accX1<0)
         {
-            accX1=accavgY1-avgY1;
+            accX1=-accX1;
         }
-        else if (accavgY1<avgY1)
+        Toast.makeText(this, ""+accX1, Toast.LENGTH_SHORT).show();
+        if(accX1>70 )
         {
-            accY1=avgY1-accavgY1;
+            Toast.makeText(this, "Accurate TAKBEER", Toast.LENGTH_SHORT).show();
         }
-//for accuracy Z1
-        if(accavgZ1>avgZ1)
-        {
-            accZ1=accavgZ1-avgZ1;
-        }
-        else if (accavgZ1<avgZ1)
-        {
-            accZ1=avgZ1-accavgZ1;
-        }
-    double totalAcc=(accX1+accY1+accZ1)*100;//store value in total accuracy
+
 
     }
 }

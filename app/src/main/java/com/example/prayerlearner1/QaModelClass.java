@@ -74,7 +74,8 @@ public class QaModelClass {
         this.questionuid = questionuid;
     }
 
-    public QaModelClass() {
+    public QaModelClass()
+    {
     }
 
     String questionuid;
