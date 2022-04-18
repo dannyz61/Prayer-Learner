@@ -7,10 +7,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class QuestionDetails extends AppCompatActivity {
-TextView quesview,ansview,questime,anstime,scholarname,username;
+TextView quesview,questime,anstime,scholarname,username;
+EditText ansview;
+boolean is_scholar=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +35,9 @@ TextView quesview,ansview,questime,anstime,scholarname,username;
         questime.setText(intent.getStringExtra("questime"));
         ansview.setText(intent.getStringExtra("answer"));
         quesview.setText(intent.getStringExtra("question"));
-
+        is_scholar=intent.getBooleanExtra("value",false);
+        if(!is_scholar)
+            ansview.setEnabled(false);
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

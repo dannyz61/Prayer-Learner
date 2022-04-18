@@ -75,9 +75,18 @@
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/menu/navigation_drawer.xml" value="0.264" />
         <entry key="..\:/Users/langa/AndroidStudioProjects/Prayer-Learner/app/src/main/res/menu/newac.xml" value="0.11927083333333334" />
         <entry key="app/src/main/res/layout/activity_ask_question.xml" value="0.32083333333333336" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.17708333333333334" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.21881866455078125" />
+        <entry key="app/src/main/res/layout/activity_login_scholar.xml" value="0.21922149658203127" />
         <entry key="app/src/main/res/layout/activity_posture1.xml" value="0.32083333333333336" />
         <entry key="app/src/main/res/layout/activity_posture_result.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_qa.xml" value="0.20971962749094203" />
+        <entry key="app/src/main/res/layout/activity_question_details.xml" value="0.375" />
         <entry key="app/src/main/res/layout/activity_report.xml" value="0.32083333333333336" />
+        <entry key="app/src/main/res/layout/nav_header.xml" value="0.16621376811594202" />
+        <entry key="app/src/main/res/layout/question_item_view.xml" value="0.16621376811594202" />
+        <entry key="app/src/main/res/menu/logout.xml" value="0.17708333333333334" />
+        <entry key="app/src/main/res/menu/navigation_drawer.xml" value="0.17708333333333334" />
       </map>
     </option>
   </component>

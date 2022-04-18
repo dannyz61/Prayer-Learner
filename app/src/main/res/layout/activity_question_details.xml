@@ -107,7 +107,7 @@
         app:layout_constraintTop_toBottomOf="@+id/questionview"
         app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
+    <EditText
         android:id="@+id/ansview"
         android:layout_width="319dp"
         android:layout_height="195dp"
@@ -118,6 +118,7 @@
         android:text=" Praise be to Allah.  The wealth that has been allocated for a public interest, such as mosques or to be given to the poor, is not subject to zakaah, because it is not owned by a particular individual.  An-Nawawi (may Allah have mercy on him) said in al-Majmoo‘ (5/311): If the livestock has been allocated for a public interest, such as the poor, mosques, fighters in Allah’s cause, orphans and the like, then no zakaah is due on it, because it does not belong to a particular individual."
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="@+id/view2"
         app:layout_constraintTop_toBottomOf="@+id/questionview" />
 
