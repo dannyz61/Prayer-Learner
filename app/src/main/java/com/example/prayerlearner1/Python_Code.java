@@ -28,12 +28,14 @@ public class Python_Code extends AppCompatActivity {
 
     public void check(View view) {
 
-        Toast.makeText(this, "hello", Toast.LENGTH_SHORT).show();
+
       final Python  Py = Python.getInstance();
         // now create Python instances
 
         try (PyObject Pyobj = Py.getModule("Test")) {
-            obj = Pyobj.callAttr("testing", "heloo");
+            obj = Pyobj.callAttr("testing", "java is calling you");
+            Toast.makeText(this, ""+obj, Toast.LENGTH_SHORT).show();
+
         }
 
     }
