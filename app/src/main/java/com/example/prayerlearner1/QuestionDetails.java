@@ -1,18 +1,17 @@
 package com.example.prayerlearner1;
 
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.TextView;
 
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+
 public class QuestionDetails extends AppCompatActivity {
-TextView quesview,questime,anstime,scholarname,username;
-EditText ansview;
+TextView quesview,ansview, questime,anstime,scholarname,username;
+
 boolean is_scholar=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

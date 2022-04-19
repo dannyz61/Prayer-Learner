@@ -1,24 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="10dp"
+
     android:layout_height="wrap_content">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
     <EditText
+
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
         android:id="@+id/single_value_question"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:background="@drawable/shape"
+
         android:cursorVisible="false"
-
         android:editable="false"
-        android:gravity="start|center_vertical"
-        android:padding="5dp"
-        android:text="dfjldsjfjfjdf fdf dsf ds fdfasdfdsfdsfdsffdfjldsjfjfjdf fdf dsf ds fdfasdfdsfdsfdsffdfjldsjfjfjdf fdf dsf ds fdfasdfdsfdsfdsff"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="16sp" />
+        android:padding="15dp"
+        android:text="what is the halal way of sex?"
 
-</LinearLayout>
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+    </ScrollView>
+
+</androidx.cardview.widget.CardView>
