@@ -17,6 +17,9 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.chaquo.python.PyObject;
+import com.chaquo.python.Python;
+import com.chaquo.python.android.AndroidPlatform;
 import com.opencsv.CSVWriter;
 
 import java.io.FileWriter;
@@ -27,6 +30,7 @@ import java.util.List;
 
 public class PostureResult extends AppCompatActivity implements SensorEventListener  {
     SensorManager sensorManager, sensorManager1, sensorManager2;
+    PyObject obj;
     List<String[]> data;
     Long lastTimeUpdate;
     List<Float> X1=new ArrayList<>();
@@ -47,6 +51,9 @@ public class PostureResult extends AppCompatActivity implements SensorEventListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_posture_result);
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.MANAGE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE}, PackageManager.PERMISSION_GRANTED);
+        if (! Python.isStarted()) {
+            Python.start(new AndroidPlatform(PostureResult.this));
+        } // this will start Python
 
         data = new ArrayList<String[]>();
 //        data.add(new String[]{"Sensors"," ", " ", "Accelemeter", " ", ""," ", "Gyrometer", "", "","", "Magnetometer", ""});
@@ -56,6 +63,9 @@ public class PostureResult extends AppCompatActivity implements SensorEventListe
         sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         sensorManager1 = (SensorManager) getSystemService(SENSOR_SERVICE);
         sensorManager2 = (SensorManager) getSystemService(SENSOR_SERVICE);
+
+
+
     }
 
 
@@ -167,6 +177,15 @@ public class PostureResult extends AppCompatActivity implements SensorEventListe
     }
 
     public void Calculate_Average(View view) {
+
+        final Python  Py = Python.getInstance();
+        // now create Python instances
+
+        try (PyObject Pyobj = Py.getModule("Test")) {
+            obj = Pyobj.callAttr("helloow", "java is calling you");
+            Toast.makeText(this, ""+obj, Toast.LENGTH_SHORT).show();
+
+        }
         float  sum1=0,sum2=0,sum3=0,sum4=0,sum5=0,sum6=0,sum7=0,sum8=0,sum9=0;
         double avgX1,avgX2,avgX3,avgY1,avgY2,avgY3,avgZ1,avgZ2,avgZ3=0;
         double accavgX1,accavgX2,accavgX3,accavgY1,accavgY2,accavgY3,accavgZ1,accavgZ2,accavgZ3;

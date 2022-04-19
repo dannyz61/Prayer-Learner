@@ -33,10 +33,13 @@ public class Python_Code extends AppCompatActivity {
         // now create Python instances
 
         try (PyObject Pyobj = Py.getModule("Test")) {
-            obj = Pyobj.callAttr("testing", "java is calling you");
+            obj = Pyobj.callAttr("test");
             Toast.makeText(this, ""+obj, Toast.LENGTH_SHORT).show();
 
         }
+//        catch {
+//            Toast.makeText(this, "Eror", Toast.LENGTH_SHORT).show();
+//        }
 
     }
 }
