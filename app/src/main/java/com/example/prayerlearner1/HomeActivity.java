@@ -47,6 +47,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     Bitmap bitmap;
     ImageView imageView;
     LinearLayout L;
+    boolean is_scholar=false;
     private CardView c1,c2,c3,c4,c5;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +58,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         c3 = (CardView) findViewById(R.id.card3);
         c4 = (CardView) findViewById(R.id.card4);
         c5 = (CardView) findViewById(R.id.card5);
+
 //        L=findViewById(R.id.linearLayout2);
 //
 //        nav=findViewById(R.id.nav_1);

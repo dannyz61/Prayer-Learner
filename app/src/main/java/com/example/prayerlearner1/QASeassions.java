@@ -27,6 +27,7 @@ public class QASeassions extends AppCompatActivity  {
     ArrayList<QaModelClass>qlist;
     DatabaseReference fbobj;
  MyQuestionAdapter myadapter;
+ boolean is_scholar=false;
 
 
     @Override
@@ -37,6 +38,10 @@ public class QASeassions extends AppCompatActivity  {
         actionBar.setTitle("Q&A");
         actionBar.setDisplayHomeAsUpEnabled(true);
         btn_ask=findViewById(R.id.btn_ask_question);
+        Intent intent=getIntent();
+        is_scholar=intent.getBooleanExtra("value",false);
+        if(is_scholar)
+            btn_ask.setVisibility(View.GONE);
         fbobj= FirebaseDatabase.getInstance("https://prayerlearner-default-rtdb.firebaseio.com/").getReference().child("QA");
         fbobj.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -46,7 +51,7 @@ public class QASeassions extends AppCompatActivity  {
                     qlist.add(list);
                 }
 
-                myadapter=new MyQuestionAdapter(getApplicationContext(),qlist);
+                myadapter=new MyQuestionAdapter(getApplicationContext(),qlist,is_scholar);
                 qaview.setAdapter(myadapter);
 
             }

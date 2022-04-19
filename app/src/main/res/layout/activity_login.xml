@@ -17,10 +17,10 @@
 
     <EditText
         android:id="@+id/email_text"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="329dp"
+        android:layout_height="44dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="60dp"
 
         android:layout_marginEnd="20dp"
         android:background="@color/white"
@@ -28,16 +28,17 @@
         android:minHeight="48dp"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
+    <!-- ProgressBar for Loading Time -->
+
     <EditText
         android:id="@+id/password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="329dp"
+        android:layout_height="44dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="20dp"
         android:background="@color/white"
         android:hint="Enter your Password"
@@ -45,25 +46,21 @@
         android:minHeight="48dp"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email_text" />
 
-    <!-- ProgressBar for Loading Time -->
-
     <Button
         android:id="@+id/login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/roundbtn"
         android:onClick="login"
         android:text="Login"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password" />
 
@@ -77,27 +74,38 @@
         app:layout_constraintLeft_toLeftOf="@id/button4"
         app:layout_constraintTop_toBottomOf="@id/button3" />
 
-    <Button
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="232dp"
+        android:textColor="@color/white"
+        android:text="Login as Scholar?"
+        android:onClick="log_in_as_scholar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="24dp"
-        android:background="@drawable/roundbtn"
         android:onClick="Reset_password"
         android:text="Forgot Password ?"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.895"
         app:layout_constraintStart_toEndOf="@+id/button4"
-        app:layout_constraintTop_toBottomOf="@+id/login" />
+        app:layout_constraintTop_toBottomOf="@+id/password" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="100dp"
         android:background="@drawable/roundbtn"
         android:onClick="signup"
         android:text="Sign Up"
@@ -107,11 +115,10 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="261dp"
-        android:layout_height="247dp"
-        android:layout_marginTop="60dp"
+        android:layout_width="131dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="76dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.406"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_fyp_logo" />

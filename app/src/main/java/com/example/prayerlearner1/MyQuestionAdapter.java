@@ -20,10 +20,12 @@ public class MyQuestionAdapter extends RecyclerView.Adapter<MyQuestionAdapter.My
 
     Context context;
     List<QaModelClass> listdata;
+    boolean is_scholar=false;
 
-    public MyQuestionAdapter(Context context, List<QaModelClass> listdata) {
+    public MyQuestionAdapter(Context context, List<QaModelClass> listdata,boolean value) {
         this.context = context;
         this.listdata = listdata;
+        is_scholar=value;
     }
 
     @NonNull
@@ -48,6 +50,7 @@ public class MyQuestionAdapter extends RecyclerView.Adapter<MyQuestionAdapter.My
                     intent.putExtra("answer",q.getAnswer());
                     intent.putExtra("questime",q.getQuestime());
                     intent.putExtra("anstime",q.getAnstime());
+                    intent.putExtra("value",is_scholar);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     context.startActivity(intent);
 

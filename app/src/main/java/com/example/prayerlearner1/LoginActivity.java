@@ -72,4 +72,9 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void log_in_as_scholar(View view) {
+    startActivity(new Intent(this,LoginScholar.class));
+    finish();
+    }
 }
