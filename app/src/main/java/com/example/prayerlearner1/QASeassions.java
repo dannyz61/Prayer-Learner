@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -28,6 +29,7 @@ public class QASeassions extends AppCompatActivity  {
     DatabaseReference fbobj;
  MyQuestionAdapter myadapter;
  boolean is_scholar=false;
+ String username;
 
 
     @Override
@@ -40,6 +42,8 @@ public class QASeassions extends AppCompatActivity  {
         btn_ask=findViewById(R.id.btn_ask_question);
         Intent intent=getIntent();
         is_scholar=intent.getBooleanExtra("value",false);
+        username=intent.getStringExtra("username");
+        Log.d("TAG", "onCreate:"+ username);
         if(is_scholar)
             btn_ask.setVisibility(View.GONE);
         fbobj= FirebaseDatabase.getInstance("https://prayerlearner-default-rtdb.firebaseio.com/").getReference().child("QA");
@@ -51,8 +55,9 @@ public class QASeassions extends AppCompatActivity  {
                     qlist.add(list);
                 }
 
-                myadapter=new MyQuestionAdapter(getApplicationContext(),qlist,is_scholar);
+                myadapter=new MyQuestionAdapter(getApplicationContext(),qlist,is_scholar,username);
                 qaview.setAdapter(myadapter);
+                myadapter.notifyDataSetChanged();
 
             }
 

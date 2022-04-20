@@ -54,23 +54,28 @@ public class LoginActivity extends AppCompatActivity {
 
     public void login(View view) {
         progressbar.setVisibility(View.VISIBLE);
-        String email1=email.getText().toString();
-        String pass=password.getText().toString();
-        fauth.signInWithEmailAndPassword(email1,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-            if(task.isSuccessful())
-            {
-                progressbar.setVisibility(View.GONE);
-                Toast.makeText(LoginActivity.this,  "Login Successful", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(LoginActivity.this,HomeActivity.class));
-            }
-            else
-            {
-                Toast.makeText(LoginActivity.this,  "Email or password is incorrect", Toast.LENGTH_SHORT).show();
-            }
-            }
-        });
+        String email1 = email.getText().toString();
+        String pass = password.getText().toString();
+        if (!email1.isEmpty() && !pass.isEmpty()) {
+            fauth.signInWithEmailAndPassword(email1, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                @Override
+                public void onComplete(@NonNull Task<AuthResult> task) {
+                    if (task.isSuccessful()) {
+                        progressbar.setVisibility(View.GONE);
+                        Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(LoginActivity.this, HomeActivity.class));
+                    }
+                    else {
+                        progressbar.setVisibility(View.GONE);
+                        Toast.makeText(LoginActivity.this, "Email or password is incorrect", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            });
+        }
+        else {
+            progressbar.setVisibility(View.GONE);
+            Toast.makeText(this, "email or password is empty", Toast.LENGTH_SHORT).show();
+        }
     }
 
     public void log_in_as_scholar(View view) {

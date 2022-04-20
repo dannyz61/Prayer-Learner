@@ -1,6 +1,7 @@
 package com.example.prayerlearner1;
 
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.text.TextUtils;
@@ -21,11 +22,13 @@ public class MyQuestionAdapter extends RecyclerView.Adapter<MyQuestionAdapter.My
     Context context;
     List<QaModelClass> listdata;
     boolean is_scholar=false;
+    String username;
 
-    public MyQuestionAdapter(Context context, List<QaModelClass> listdata,boolean value) {
+    public MyQuestionAdapter(Context context, List<QaModelClass> listdata, boolean value, String username1) {
         this.context = context;
         this.listdata = listdata;
         is_scholar=value;
+        username=username1;
     }
 
     @NonNull
@@ -51,8 +54,13 @@ public class MyQuestionAdapter extends RecyclerView.Adapter<MyQuestionAdapter.My
                     intent.putExtra("questime",q.getQuestime());
                     intent.putExtra("anstime",q.getAnstime());
                     intent.putExtra("value",is_scholar);
+                    intent.putExtra("name",username);
+                Log.d("TAG", "onClick: "+q.questionuid);
+                    intent.putExtra("id",q.questionuid);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     context.startActivity(intent);
+
+
 
 
             }
