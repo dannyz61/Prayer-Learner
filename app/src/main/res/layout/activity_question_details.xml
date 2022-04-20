@@ -7,126 +7,173 @@
     android:background="#002028"
     tools:context=".QuestionDetails">
 
+
     <TextView
         android:id="@+id/textView42"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="90dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
         android:background="#9444"
         android:paddingStart="5dp"
         android:paddingEnd="5dp"
-        android:text="Scholar name"
+        android:text="Scholar"
         android:textColor="@color/white"
+        android:textSize="23dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/scholar_name_view2"
-        android:layout_width="106dp"
-        android:layout_height="21dp"
+        android:layout_width="178dp"
+        android:layout_height="20dp"
         android:layout_marginStart="52dp"
-        android:layout_marginTop="56dp"
-        android:background="#9444"
+        android:layout_marginTop="24dp"
+
         android:paddingStart="5dp"
         android:paddingEnd="5dp"
         android:text="Molana TARIQ JAMEEL"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintHorizontal_bias="0.292"
         app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="68dp"
-        android:background="#9444"
-        android:paddingStart="5dp"
-        android:paddingEnd="5dp"
-        android:text="User"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/user_name_view"
-        android:layout_width="106dp"
-        android:layout_height="21dp"
-        android:layout_marginTop="17dp"
-        android:background="#9444"
+        android:layout_width="177dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="28dp"
         android:paddingStart="5dp"
         android:paddingEnd="5dp"
         android:text="Molana TARIQ JAMEEL"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/scholar_name_view2" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="92dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#9444"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="    User"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView42" />
 
     <View
         android:id="@+id/view2"
-        android:layout_width="375dp"
-        android:layout_height="437dp"
-        android:layout_marginTop="72dp"
+        android:layout_width="371dp"
+        android:layout_height="409dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
-    <TextView
-        android:id="@+id/questionview"
-        android:layout_width="348dp"
-        android:layout_height="113dp"
+    <androidx.cardview.widget.CardView
+
+
+        android:id="@+id/cardView2"
+        android:layout_width="349dp"
+        android:layout_height="163dp"
+
         android:layout_marginTop="24dp"
-        android:background="#9444"
         android:paddingStart="5dp"
         android:paddingEnd="5dp"
         android:text="Question : The people of the neighbourhood donated wealth to build a mosque, but we were not able to build it for various reasons. One full Hijri year has passed: is it obligatory to give zakaah on this wealth?"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
+        app:cardCornerRadius="12dp"
         app:layout_constraintEnd_toEndOf="@+id/view2"
         app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="@+id/view2"
-        app:layout_constraintTop_toTopOf="@+id/view2" />
+        app:layout_constraintTop_toTopOf="@+id/view2">
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="97dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="16dp"
-        android:background="#9444"
-        android:paddingStart="5dp"
-        android:paddingEnd="5dp"
-        android:text="Answer"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/ansview"
-        app:layout_constraintEnd_toEndOf="@+id/view2"
-        app:layout_constraintHorizontal_bias="0.19"
-        app:layout_constraintStart_toStartOf="@+id/view2"
-        app:layout_constraintTop_toBottomOf="@+id/questionview"
-        app:layout_constraintVertical_bias="0.0" />
 
-    <EditText
-        android:id="@+id/ansview"
-        android:layout_width="319dp"
-        android:layout_height="195dp"
-        android:layout_marginTop="52dp"
-        android:background="#9444"
+        <TextView
+            android:id="@+id/questionview"
+            android:layout_width="325dp"
+            android:layout_height="112dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="35dp"
+            android:textColor="@color/black"
+            android:textSize="12dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="97dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="Question"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cardView3"
+        android:layout_width="349dp"
+
+        android:layout_height="172dp"
+        android:layout_marginTop="28dp"
         android:paddingStart="5dp"
         android:paddingEnd="5dp"
         android:text=" Praise be to Allah.  The wealth that has been allocated for a public interest, such as mosques or to be given to the poor, is not subject to zakaah, because it is not owned by a particular individual.  An-Nawawi (may Allah have mercy on him) said in al-Majmoo‘ (5/311): If the livestock has been allocated for a public interest, such as the poor, mosques, fighters in Allah’s cause, orphans and the like, then no zakaah is due on it, because it does not belong to a particular individual."
-        android:textColor="@color/white"
+        android:textColor="@color/black"
+        app:cardCornerRadius="12dp"
         app:layout_constraintEnd_toEndOf="@+id/view2"
-        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintHorizontal_bias="0.409"
         app:layout_constraintStart_toStartOf="@+id/view2"
-        app:layout_constraintTop_toBottomOf="@+id/questionview" />
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+        <EditText
+            android:id="@+id/ansview"
+            android:layout_width="327dp"
+            android:layout_height="126dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="233dp"
+            android:hint="not answer nyet"
+            android:textColor="@color/black"
+            android:textSize="12dp">
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="97dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="Answer"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/button14"
+        android:id="@+id/back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
+        android:layout_marginEnd="40dp"
         android:background="#29524A"
         android:onClick="back"
         android:text="Back"
@@ -134,30 +181,43 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view2" />
 
-    <TextView
-        android:id="@+id/qtimeview"
-        android:layout_width="185dp"
-        android:layout_height="27dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="24dp"
-        android:gravity="center"
-        android:text="TextView"
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="146dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="156dp"
+        android:background="#29524A"
+        android:onClick="submit"
+        android:text="submit"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/questionview" />
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
 
     <TextView
         android:id="@+id/anstimeview"
-        android:layout_width="187dp"
-        android:layout_height="23dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="331dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="22dp"
         android:gravity="center"
         android:text="TextView"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ansview"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+
+    <TextView
+        android:id="@+id/qtimeview"
+        android:layout_width="332dp"
+        android:layout_height="24dp"
+
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+
+        android:text="TextView"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+

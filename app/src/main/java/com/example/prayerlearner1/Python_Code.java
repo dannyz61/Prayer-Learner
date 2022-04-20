@@ -1,11 +1,11 @@
 package com.example.prayerlearner1;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.chaquo.python.PyObject;
 import com.chaquo.python.Python;

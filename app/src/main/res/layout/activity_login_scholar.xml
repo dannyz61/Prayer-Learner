@@ -60,7 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:onClick="log_in_as_User"
-        android:text="Login as Scholar?"
+        android:text="Login as User?"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

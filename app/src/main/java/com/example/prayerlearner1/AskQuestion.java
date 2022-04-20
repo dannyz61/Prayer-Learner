@@ -19,6 +19,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -58,8 +59,11 @@ public class AskQuestion extends AppCompatActivity {
         btb_submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Date currentTime = Calendar.getInstance().getTime();
-                String time=currentTime.toString();
+//                Date currentTime = Calendar.getInstance().getTime();
+//                String time=currentTime.toString();
+                SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+                Date date = new Date();
+                String time=date.toString();
                 String q=question.getText().toString();
 
                 if(identity_switch.isChecked())
