@@ -57,4 +57,11 @@ public class PostureIdentitifiction extends AppCompatActivity {
     }
 
 
+    public void PostureIdentification(View view) {
+
+
+        Intent intent=new Intent(this, postureIdentification.class);
+        startActivity(intent);
+        finish();
+    }
 }

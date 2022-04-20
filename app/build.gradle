@@ -5,8 +5,7 @@ plugins {
 }
 
 android {
-    compileSdk 31
-
+    compileSdkVersion 31
     defaultConfig {
         applicationId "com.example.prayerlearner1"
         minSdk 21
@@ -22,8 +21,10 @@ android {
         python {
 
             pip {
+                install "openpyxl"
+                install  "python-dateutil"
                 install "numpy"
-                 install "scikit-learn"
+                install "scikit-learn"
                 install "pandas"
             }
 
@@ -78,12 +79,6 @@ android {
     buildFeatures {
         viewBinding true
     }
-    dependenciesInfo {
-        includeInApk true
-        includeInBundle true
-    }
-    buildToolsVersion '30.0.2'
-    ndkVersion '21.4.7075529'
 }
 
 dependencies {
