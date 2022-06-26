@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import csv
 from sklearn.svm import SVC
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, StandardScaler
@@ -22,7 +23,7 @@ def checkposture():
     clf = SVC(C=1.0, kernel='linear')
     clf.fit(X_train,y_train)
     ##reading file
-    file_data1= pd.read_excel(join(dirname(__file__), "sajda.xlsx"))
+    file_data1= pd.read_excel("/sdcard/Download/SensorData.xls")
     from sklearn import metrics
 
 
@@ -37,11 +38,13 @@ def checkposture():
     c=np.count_nonzero(y_pred == 2)
     d=np.count_nonzero(y_pred == 3)
     if a> max(b, c, d):
-      return("You performed takbeer")
-    if b> max(a, c, d):
-      return("You Performed rakuh")
-    if c> max(a, b ,d):
-      return("You peform qiyam")
-    if d> max(a, b, c):
-      return("You Performed Sajda")
+        return("You performed takbeer")
+    elif b> max(a, c, d):
+        return("You Performed rakuh")
+    elif c> max(a, b ,d):
+        return("You peform qiyam")
+    elif d> max(a, b, c):
+        return("You Performed Sajda")
+    else:
+        return("You performed noting :)")
 

@@ -19,6 +19,15 @@ import android.widget.Toast;
 
 import com.opencsv.CSVWriter;
 
+import org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.math.BigDecimal;
@@ -41,14 +50,16 @@ public class PostureResult extends AppCompatActivity implements SensorEventListe
     int i=0;
     View v;
     TextView acc0,acc1,acc2,gyr0,gyr1,gyr2,meg0,meg1,meg2, avg_t;
-    String csv = "/sdcard/Download/SensorData.csv";// Here csv
+    File csv = new File("/sdcard/Download/SensorData.xls");// Here csv
+    HSSFWorkbook workbook;
+    HSSFSheet sheet;
+    int row_count;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_posture_result);
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.MANAGE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE}, PackageManager.PERMISSION_GRANTED);
-
-
 
         avg_t =findViewById(R.id.meanTextView);
 //        sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
@@ -64,9 +75,24 @@ public class PostureResult extends AppCompatActivity implements SensorEventListe
         data = new ArrayList<String[]>();
 //        data.add(new String[]{"Sensors"," ", " ", "Accelemeter", " ", ""," ", "Gyrometer", "", "","", "Magnetometer", ""});
         data.add(new String[]{"Axis", "TS1","X1", "Y1", "Z1"});
+
+
+        row_count=0;
+         workbook = new HSSFWorkbook();
+//invoking creatSheet() method and passing the name of the sheet to be created
+        sheet= workbook.createSheet("data");
+//creating the 0th row using the createRow() method
+        HSSFRow rowhead = sheet.createRow(row_count++);
+        rowhead.createCell(0).setCellValue("Axis");
+        rowhead.createCell(1).setCellValue("TS1");
+        rowhead.createCell(2).setCellValue("X1");
+        rowhead.createCell(3).setCellValue("Y1");
+        rowhead.createCell(4).setCellValue("Z1");
+
 //        sensorManager2.registerListener(this, sensorManager2.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD), SensorManager.SENSOR_DELAY_NORMAL);
         sensorManager1.registerListener(this, sensorManager1.getDefaultSensor(Sensor.TYPE_ACCELEROMETER), SensorManager.SENSOR_DELAY_NORMAL);
 //        sensorManager.registerListener(this, sensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE), SensorManager.SENSOR_DELAY_NORMAL);
+
     }
 
     @Override
@@ -94,7 +120,13 @@ public class PostureResult extends AppCompatActivity implements SensorEventListe
         Y1.add(values[1]);
         Z1.add(values[2]);
 
-        //        acc0.setText(String.valueOf(x));
+        HSSFRow rowhead = sheet.createRow(row_count++);
+        rowhead.createCell(0).setCellValue("");
+        rowhead.createCell(1).setCellValue(String.valueOf(val));
+        rowhead.createCell(2).setCellValue(String.valueOf((float) event.values[0]));
+        rowhead.createCell(3).setCellValue(String.valueOf((float) event.values[1]));
+        rowhead.createCell(4).setCellValue(String.valueOf((float) event.values[2]));
+//        //        acc0.setText(String.valueOf(x));
 //        acc1.setText(String.valueOf(y));
 //        acc2.setText(String.valueOf(z));
 //        Toast.makeText(this,"accelerometer data \nvalue of x is "+x+"\nvalue of Y "+y+"\nvalue of z "+z,Toast.LENGTH_LONG).show();
@@ -152,12 +184,20 @@ public class PostureResult extends AppCompatActivity implements SensorEventListe
 //            sensorManager.unregisterListener(this);
             sensorManager1.unregisterListener(this);
 //            sensorManager2.unregisterListener(this);
-            CSVWriter writer1;
-            writer1 = null;
-            writer1 = new CSVWriter(new FileWriter(csv));
+//            CSVWriter writer1;
+//            writer1 = null;
+//            writer1 = new CSVWriter(new FileWriter(csv));
+//            writer1.writeAll(data); // data is adding to csv
+//            writer1.close();
+
+            FileOutputStream fileOut = new FileOutputStream(csv);
+            workbook.write(fileOut);
+            fileOut.flush();
+            fileOut.close();
+
+
+
             Toast.makeText(this, "Data Exported "+csv+" Succesfully", Toast.LENGTH_LONG).show();
-            writer1.writeAll(data); // data is adding to csv
-            writer1.close();
 
 
         } catch (IOException e) {
